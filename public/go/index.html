@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+        go - zsjshao
+      </title>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  
+  <meta name="theme-color" content="#000000" />
+  
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <meta name="description" content="Go 语言环境安装 Go 语言支持以下系统： Linux FreeBSD Mac OS X（也称为 Darwin） Window 安装包下载地址为：https://golang.org/dl/。需翻墙 UNIX/Linux/Mac" />
+  <meta name="generator" content="Hugo 0.69.2 with theme pure" />
+  <title>go - zsjshao</title>
+  
+  
+  <link rel="stylesheet" href="https://www.zsjshao.net:1313/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+  
+  <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+  <meta property="og:title" content="go" />
+<meta property="og:description" content="Go 语言环境安装 Go 语言支持以下系统： Linux FreeBSD Mac OS X（也称为 Darwin） Window 安装包下载地址为：https://golang.org/dl/。需翻墙 UNIX/Linux/Mac" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.zsjshao.net:1313/go/" />
+<meta property="article:published_time" content="2019-02-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-02-28T00:00:00+00:00" />
+<meta itemprop="name" content="go">
+<meta itemprop="description" content="Go 语言环境安装 Go 语言支持以下系统： Linux FreeBSD Mac OS X（也称为 Darwin） Window 安装包下载地址为：https://golang.org/dl/。需翻墙 UNIX/Linux/Mac">
+<meta itemprop="datePublished" content="2019-02-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-02-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2480">
+
+
+
+<meta itemprop="keywords" content="go," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="go"/>
+<meta name="twitter:description" content="Go 语言环境安装 Go 语言支持以下系统： Linux FreeBSD Mac OS X（也称为 Darwin） Window 安装包下载地址为：https://golang.org/dl/。需翻墙 UNIX/Linux/Mac"/>
+
+  <!--[if lte IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+    <![endif]-->
+
+  <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/zsjshao" target="_blank">
+            <img class="img-circle img-rotate" src="https://www.zsjshao.net:1313/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">zsjshao</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>gz, China</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="想要查找什么..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>个人博客~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> 分类</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://www.zsjshao.net:1313/categories/go/" class="category-list-link">go</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://www.zsjshao.net:1313/categories/openstack/" class="category-list-link">openstack</a><span class="category-list-count">2</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> 标签</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://www.zsjshao.net:1313/tags/go/" class="tag-list-link">go</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://www.zsjshao.net:1313/tags/openstack/" class="tag-list-link">openstack</a><span
+                    class="tag-list-count">2</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://www.zsjshao.net:1313/go/" class="title">go</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-02-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://www.zsjshao.net:1313/1openstack-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" class="title">openstack</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-02-28</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://www.zsjshao.net:1313/2openstack-%E7%AE%80%E4%BB%8B/" class="title">openstack</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2019-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-02-28</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">文章目录</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/go/"
+    >go</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://www.zsjshao.net:1313/go/" class="article-date">
+  <time datetime="2019-02-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">2019-02-28</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/go/"> go </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/go/"> go </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/go/#comments"
+            class="article-comment-link">评论</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">字数统计: 2480字</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">阅读时长: 5分 </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="go-语言环境安装">Go 语言环境安装</h2>
+<!-- raw HTML omitted -->
+<p>Go 语言支持以下系统：</p>
+<ul>
+<li>Linux</li>
+<li>FreeBSD</li>
+<li>Mac OS X（也称为 Darwin）</li>
+<li>Window</li>
+</ul>
+<p>安装包下载地址为：https://golang.org/dl/。需翻墙</p>
+<h3 id="unixlinuxmac-os-x-和-freebsd-安装">UNIX/Linux/Mac OS X, 和 FreeBSD 安装</h3>
+<p>以下介绍了在UNIX/Linux/Mac OS X, 和 FreeBSD系统下使用源码安装方法：</p>
+<p>1、下载源码包：go1.14.2.linux-amd64.tar.gz。</p>
+<p>2、将下载的源码包解压至 /usr/local目录。</p>
+<pre><code>[root@ali ~]# tar xf go1.14.2.linux-amd64.tar.gz -C /usr/local/
+</code></pre>
+<p>添加环境变量</p>
+<pre><code>export PATH=$PATH:/usr/local/go/bin
+</code></pre>
+<h3 id="windows-系统下安装">Windows 系统下安装</h3>
+<p>Windows 下可以使用 .msi 后缀(在下载列表中可以找到该文件，如go1.14.2.windows-amd64.msi)的安装包来安装。</p>
+<p>默认情况下.msi文件会安装在 c:\Go 目录下。安装后重启命令窗口。</p>
+<h3 id="安装测试">安装测试</h3>
+<p>创建工作目录 F:\07-Go</p>
+<p>文件名: hello.go，代码如下：</p>
+<pre><code>package main
+
+import &quot;fmt&quot;
+
+func main() {
+   fmt.Println(&quot;Hello, World!&quot;)
+}
+</code></pre>
+<p>使用 go 命令执行以上代码输出结果如下：</p>
+<pre><code>F:\07-Go&gt;go run hello.go
+hello, world
+</code></pre>
+<p>学习方法</p>
+<p>需求、学、讲、用</p>
+<p>说的非常好，我一句都没听懂</p>
+<h3 id="dos指令">dos指令</h3>
+<p>命令帮助：command/?</p>
+<p>md(mkdir) DIR&hellip;：创建目录</p>
+<p>rd(rmdir) [/s/q] DIR：删除目录或删除目录及文件</p>
+<p>cd /d DIR：目录切换</p>
+<p>dir：列出当前目录下的文件及目录</p>
+<p>copy(cp)：拷贝文件</p>
+<p>move(mv)：移动或重命名文件</p>
+<p>del(rm)：删除文件</p>
+<p>cls(clear)：清屏</p>
+<p>exit：退出</p>
+<p>ren(rename)：批量修过文件名</p>
+<p>type(cat)：查看文本文件</p>
+<p>tree：显示目录树</p>
+<h3 id="go变量">Go变量</h3>
+<h4 id="变量声明">变量声明</h4>
+<p>1、指定变量类型，声明后若不赋值，使用默认值</p>
+<p>var i int</p>
+<p>2、根据值自行判定变量类型（类型推导）</p>
+<p>var num = 10.11</p>
+<p>3、省略var，注意 := 左侧的变量不应该是已经声明过的，否则会导致编译错误</p>
+<p>name := &ldquo;zsjshao&rdquo;</p>
+<p>4、多变量声明</p>
+<p>在编程中，有时我们需要一次性声明多个变量，Golang也提供这样的语法</p>
+<p>var n1,n2,n3 int</p>
+<p>var n1,name,n3 = 100,&ldquo;zsjshao&rdquo;,888</p>
+<p>n1,name,n3 := 100,&ldquo;zsjshao&rdquo;,888</p>
+<p>5、声明全局变量(函数外)</p>
+<p>var n1 = 100</p>
+<p>var n2 =  200</p>
+<p>var name = &ldquo;zsjshao&rdquo;</p>
+<p>或</p>
+<p>var (</p>
+<p>n1 = 100</p>
+<p>n2 = 200</p>
+<p>name = &ldquo;zsjshao&rdquo;</p>
+<p>)</p>
+<p>6、该区域的数据值可以在同一类型范围内不断变化</p>
+<p>7、变量在同一个作用域内不能同名</p>
+<p>8、变量=变量名+值+数据类型，变量的三要素</p>
+<p>9、Goland的变量如果没有赋初值，编译器会使用默认值</p>
+<h4 id="程序中--号的作用">程序中 + 号的作用</h4>
+<p>当左右两边为数值时，做加法运算</p>
+<p>当左右两边为字符串时，做字符串拼接，可换行，+号留在上一行</p>
+<h4 id="变量的数据类型">变量的数据类型</h4>
+<h5 id="基本数据类型">基本数据类型</h5>
+<pre><code>数值型
+  整数类型(int,int8,int16,int32(rune（unicode）),int64,uint,uint8(byte),uint16,uint32,uint64)
+    在使用整形变量时，遵守保小不保大的原则，即尽量使用占用空间小的数据类型
+  
+  浮点类型（单精度:float32,双精度:float64）
+    浮点数=符号位+指数位+尾数位
+    尾数部分可能丢失，造成精度损失，尽量使用float64(默认类型)。-123.0000901
+    浮点数常量有十进制和科学计数法两种表示形式
+      512.34
+      5.1234e2
+字符型(没有专门的字符型，使用byte来保存单个字母(ASCII)字符，汉字使用rune类型或int)
+  Go默认使用UTF-8编码
+  英文字母占用一个字节，汉字占用3个字节
+  在go中，字符的本质是一个整数，直接输出时，是该字符对应的UTF-8编码的码值
+  字符类型是可以进行运算的，相当于一个整数，因为它都对应有Unicode码
+  263663246122522
+布尔型(bool)，bool类型数据只允许取值true和false，不能使用0或1代替
+  bool类型占一个字节
+字符串(string)由字符组成
+  字符串赋值后不可修改
+  字符串的两种表示形式
+    双引号，会识别转义字符
+    反引号，以字符串的原生形式输出，包括换行和特殊字符，可以实现防止攻击、输出源代码等效果
+</code></pre>
+<h6 id="基本数据类型的默认值">基本数据类型的默认值</h6>
+<pre><code>int 0
+float32 0
+bool false
+string &quot;&quot;
+</code></pre>
+<p>基本数据类型的转换</p>
+<ul>
+<li>go在不同类型的变量之间赋值时需要显示转换</li>
+<li>T(v)，其中T为type，v为变量</li>
+<li>被转换的是变量的值，而非变量自身</li>
+<li>小转大正常int8-&gt;int16，大转小按溢出处理int16-&gt;int8</li>
+</ul>
+<h6 id="基本数据类型和string的转换">基本数据类型和string的转换</h6>
+<p>基本数据类型转string</p>
+<p>1、fmt.Sprintf(&quot;%参数&rdquo;, 表达式)</p>
+<p>参数需要和表达式的数据类型想匹配</p>
+<p>fmt.Sprintf().. 会返回转换后的字符串</p>
+<p>2、使用strconv的函数</p>
+<p>string转基本数据类型</p>
+<p>1、使用strconv的函数</p>
+<p>注意：转换时，要确保String类型能够转成有效的数据，若转换失败，其置为默认值</p>
+<h5 id="派生复杂数据类型">派生/复杂数据类型</h5>
+<pre><code>指针(Pointer)
+数组()
+结构体(struct)
+管道(Channel)
+函数
+切片(slice)
+接口(interface)
+map
+</code></pre>
+<h6 id="指针">指针</h6>
+<p>基本数据类型，变量存的就是值，也叫值类型</p>
+<p>获取变量的地址，用&amp;，比如：var num int，获取num的地址：&amp;num</p>
+<p>指针类型，指针变量存的是一个地址，这个地址指向的空间存的才是值，比如：var ptr *int = &amp;num</p>
+<p>获取指针类型所指向的值，使用：*，比如：var ptr *int，使用*ptr获取获取ptr指向的值</p>
+<pre><code>[root@ali project]# cat var.go 
+package main
+import &quot;fmt&quot;
+
+func main() {
+    name := &quot;zsjshao&quot;
+    ptr := &amp;name
+    fmt.Println(&quot;MyName =&quot; ,*ptr,ptr,&amp;ptr)
+}
+[root@ali project]# \go run var.go 
+MyName = zsjshao 0xc000010200 0xc00000e030
+</code></pre>
+<p>如何在程序中查看变量的占用字节大小和数据类型</p>
+<p>fmt.Printf(&quot;&quot;%T %d&rdquo;,n1,unsafe.Sizeof(n1))</p>
+<h4 id="值类型和引用类型的说明">值类型和引用类型的说明</h4>
+<p>值类型：基本数据类型int系列、float系列、bool、string、数组和结构体struct</p>
+<ul>
+<li>变量直接存储值，内存通常在栈中分配</li>
+</ul>
+<p>引用类型：指针、slice切片、map、管道chan、interface等都是引用类型</p>
+<ul>
+<li>变量存储的是一个地址，这个地址对应的空间才真正存储数据（值），内存通常在堆上分配，当没有任何变量引用这个地址时，该地址对应的数据空间就成为一个垃圾，由GC来回收</li>
+</ul>
+<p>取模</p>
+<p>a % b = a - a / b * b</p>
+<h3 id="原码反码补码">原码、反码、补码</h3>
+<p>对于有符号的而言</p>
+<p>二进制的最高位是符号位：0表示正数，1表示负数</p>
+<p>正数的原码，反码，补码都一样</p>
+<p>负数的反码=原码符号位不变，其他位取反</p>
+<p>负数的补码=反码+1</p>
+<p>0的反码、补码都是0</p>
+<p>在计算机运算的时候，都是以<code>补码</code>的方式来运算</p>
+<h3 id="位运算符">位运算符</h3>
+<p>按位与&amp; ：全为1则为1，否则为0</p>
+<p>按位或|：一个为1则为1，否则为0</p>
+<p>按位异或^：不同为1，相同为0</p>
+<h3 id="移位运算符">移位运算符</h3>
+<p>右移运算符&raquo;：低位溢出，符号位不变，并用符号位补溢出的高位</p>
+<p>左移运算符&laquo;：符号位不变，低位补0</p>
+<h3 id="程序流程控制">程序流程控制</h3>
+<p>顺序控制</p>
+<p>分支控制</p>
+<p>循环控制</p>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接: </strong>
+      <a href="https://www.zsjshao.net:1313/go/" title="go" target="_blank" rel="external">https://www.zsjshao.net:1313/go/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/zsjshao" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://www.zsjshao.net:1313/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/zsjshao" target="_blank"><span class="text-dark">zsjshao</span><small class="ml-1x"></small></a></h3>
+        <div>Good Good Study, Day Day Up~</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://www.zsjshao.net:1313/1openstack-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/" title="openstack"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;下一篇</span></a>
+            </li>
+            <li class="next">
+                <a href="https://www.zsjshao.net:1313/about/"
+                    title="About"><span>上一篇&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="文章目录" role="button">
+                    <span>[&nbsp;</span><span>文章目录</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter"
+                data-mobile-sites="weibo,qq,qzone"></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/zsjshao" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.zsjshao.net:1313/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2020  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://www.zsjshao.net:1313/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://www.zsjshao.net:1313/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(未命名)',
+            },
+            ROOT_URL: 'https:\/\/www.zsjshao.net:1313\/',
+            CONTENT_URL: 'https:\/\/www.zsjshao.net:1313\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://www.zsjshao.net:1313/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+  </body>
+</html>

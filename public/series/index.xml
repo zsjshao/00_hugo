@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on zsjshao</title>
+    <link>https://www.zsjshao.net:1313/series/</link>
+    <description>Recent content in Series on zsjshao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+        <atom:link href="https://www.zsjshao.net:1313/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://www.zsjshao.net:1313/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.zsjshao.net:1313/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+ https://github.</description>
+    </item>
+    
+    <item>
+      <title>go</title>
+      <link>https://www.zsjshao.net:1313/go/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.zsjshao.net:1313/go/</guid>
+      <description>Go 语言环境安装 Go 语言支持以下系统： Linux FreeBSD Mac OS X（也称为 Darwin） Window 安装包下载地址为：https://golang.org/dl/。需翻墙 UNIX/Linux/Mac</description>
+    </item>
+    
+    <item>
+      <title>openstack</title>
+      <link>https://www.zsjshao.net:1313/1openstack-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.zsjshao.net:1313/1openstack-%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87/</guid>
+      <description>初始环境 设备命名、角色及地址 名称 操作系统 IP地址 角色 controller1 CentOS 7.2 192.168.3.71192.168.101.71 控制节点 controller2 CentOS 7.2 192.168.3.72192.168.101.72 控制节点 compute1 CentOS 7.2 192.168.3.73192.168.101.73 计算节点 compute2 CentOS 7.2 192.168.3.74192.168.101.74 计算节点 mariadb1 CentOS 7.2 192.168.3.75192.168.101.75 mariadb master、</description>
+    </item>
+    
+    <item>
+      <title>openstack</title>
+      <link>https://www.zsjshao.net:1313/2openstack-%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.zsjshao.net:1313/2openstack-%E7%AE%80%E4%BB%8B/</guid>
+      <description>openstack简介 1、云计算与openstack IT系统架构的发展过程图 IT系统架构的发展到目前为止大致可以分为3个阶段： 物理机架构 这一</description>
+    </item>
+    
+  </channel>
+</rss>
