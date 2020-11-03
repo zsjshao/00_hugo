@@ -83,9 +83,14 @@ args:
 
 ```
 
-\$\(VAR_NAME)：变量引用
 
-\$\$\(VAR_NAME)：命令替换
+
+```
+$(VAR_NAME)：变量引用
+$$(VAR_NAME)：命令替换
+```
+
+
 
 https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
