@@ -1,3 +1,13 @@
++++
+author = "zsjshao"
+title = "03_yaml"
+date = "2020-05-01"
+tags = ["kubernetes"]
+categories = ["kubernetes"]
+
++++
+
+
 # yaml配置清单：
 
 ## 资源的清单格式：
