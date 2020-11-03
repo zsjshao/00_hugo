@@ -83,8 +83,8 @@ args:
 
 ```
 
-$(VAR_NAME)：变量引用
-$$(VAR_NAME)：命令替换
+\$(VAR_NAME)：变量引用
+\$\$(VAR_NAME)：命令替换
 
 https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
@@ -92,7 +92,7 @@ https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument
 
 #### 标签：
 
-labels <string>
+labels \<string>
 
   ```
 labels:
@@ -166,7 +166,7 @@ kubectl label nodes node01.zsjshao.net disktype=ssd
 
 #### 指定节点
 
-nodeName <string>
+nodeName \<string>
 
 
 
