@@ -74,6 +74,8 @@ command：
 - "/bin/sh"
 - "-c"
 - "sleep 3600"
+
+command: ["/bin/sh","-c","sleep 3600"]
 ```
 
 args <[]string>
@@ -182,13 +184,287 @@ annotations:
 
 与label不同的地方在于，它不能用于挑选资源对象，仅用于为对象提供“元数据”。
 
+#### 变量
+
+env <[]Object>
+
+```
+env:
+- name: 
+  value:
+  valueFrom:
+```
+
+
+
 
 
 ### Pod的生命周期
 
 状态：Pending，Running，Failed，Succeeded，Unknown
 
+Pod生命周期中的重要行为：
 
+- 初始化容器：
+- 容器探测：
+  - liveness
+  - readiness
+
+restartPolicy：
+
+- Always，OnFailure，Never.  Default to Always.
+
+探针类型有三种：
+
+- ExecAction、TCPSocketAction、HTTPGetAction
+
+#### 存活性探测：
+
+```
+restartPolicy: Always
+livenessProbe：
+  exec:
+    command: ["test","-e","/tmp/testfile"]
+  httpGet:
+    host: 
+    httpHeaders:
+    path: /index.html
+    port:
+    scheme:
+  tcpSocket:
+    host: 
+    port: 
+  failureThreshold: 1
+  initialDelaySeconds: 1
+  periodSeconds: 3
+  successThreshold: 1
+  timeoutSeconds: 1
+```
+
+#### 就绪性探测
+
+```
+readinessProbe:
+  httpGet:
+    host: 
+    httpHeaders:
+    path: /index.html
+    port:
+    scheme:
+```
+
+#### lifecycle
+
+lifecycle \<Object>
+
+```
+lifecycle:
+  postStart:
+    exec:
+      command: []
+    httpGet:
+    tcpSocket:
+  preStop:
+    exec:
+    httpGet:
+    tcpSocket:
+```
+
+
+
+## Pod控制器：
+
+ReplicationController：
+
+ReplicaSet：
+
+Deployment：
+
+DaemonSet:
+
+Job:
+
+Cronjob:
+
+StatefulSet:
+
+
+
+TPR：Third Party Resources，1.2+，1.7
+
+CDR：Custom Definded Resources，1.8+
+
+
+
+Operator：
+
+
+
+Helm：
+
+
+
+### ReplicaSet
+
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp
+  namespace: default
+spec:
+  minReadySeconds: 
+  replicas: 2
+  selector:
+    matchLabels:
+      app: myapp
+      release: canary
+  template: 
+    metadata:
+      name: myapp-pod
+      labels:
+        app: myapp
+        release: canary
+    spec:
+      containers:
+      - name: myapp-container
+        image: 
+        ports:
+        - name: http
+          containerPort: 80
+```
+
+### Deployment
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deploy
+  namespace: default
+spec:
+  replicas: 2
+  revisionHistoryLimit: 10
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxSurge: 10%
+      maxUnavailable: 0 
+  paused: 
+  selector:
+    matchLabels:
+      app: myapp
+      release: canary
+  template:
+    metadata:
+      labels:
+        app: myapp
+        release: canary
+    spec:
+      containers:
+      - name: myapp
+        image:
+        ports:
+        - name: http
+          containerPort: 80
+```
+
+kubectl rollout help
+
+```
+kubectl rollout status deployment myapp-deploy
+kubectl rollout pause deployment myapp-deploy
+kubectl rollout resume deployment myapp-deploy
+kubectl rollout history deployment myapp-deploy
+kubectl rollout undo deployment myapp-deploy --to-revision=1
+```
+
+patch
+
+```
+kubectl patch help
+kubectl patch deployment myapp-deploy -p '{"spec":{"replicas":5}}'
+kubectl patch deployment myapp-deploy -p '{"spec":{"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":0}}}}'
+```
+
+set image
+
+```
+kubectl set image deployment myapp-deploy myapp=ikubernetes/myapp:v3 && kubectl rollout pause deployment myapp-deploy
+```
+
+### DaemonSet
+
+```
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: myapp-ds
+  namespace: default
+spec:
+  minReadySeconds:
+  revisionHistoryLimit: 10
+  updateStrategy: 
+    rollingUpdate:
+      maxUnavailable: 10%
+    type: RollingUpdate | OnDelete
+  selector:
+    matchLabels:
+      app: filebeat
+      release: stable
+  template:
+    metadata:
+      labels:
+        app: filebeat
+        release: stable
+    spec:
+      containers:
+      - name: filebeat
+        image:
+        env:
+        - name: REDIS_HOST
+          value: redis.default.svc.cluster.local
+        - name: REDIS_LOG_LEVEL
+          value: info
+```
+
+## Service
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: myapp
+  namespace: default
+spec:
+  selector:
+    app: myapp
+    release: canary
+  clusterIP: IPADDR | None |
+  sessionAffinity: None | ClientIP
+  type: NodePort
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080
+    protocol: TCP
+```
+
+工作模式： userspace，iptables，ipvs
+
+- userspace： 1.1-
+- iptables：1.10-
+- ipvs：1.11+
+
+类型(type)：
+
+- ExternalName，ClusterIP，NodePort，and LoadBalancer
+
+资源记录：
+
+- SVC_NAME.NS_NAME.DOMAIN.LTD.
+- svc.cluster.local.
+- redis.default.svc.cluster.local.
 
 
 
