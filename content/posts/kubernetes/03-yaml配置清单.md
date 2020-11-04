@@ -468,7 +468,53 @@ spec:
 
 
 
+## ingress
 
+http
+
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-tomcat
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  rules:
+  - host: tomcat.magedu.com
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: tomcat
+          servicePort: 8080
+```
+
+https
+
+```
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-tomcat-tls
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  tls:
+  - hosts:
+    - tomcat.magedu.com
+    secreName: tomcat-ingress-secret
+  rules:
+  - host: tomcat.magedu.com
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: tomcat
+          servicePort: 8080
+```
 
 
 
