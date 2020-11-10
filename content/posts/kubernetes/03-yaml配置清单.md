@@ -39,6 +39,8 @@ spec:
       containerPort: 443
   nodeSelector:
     disktype: ssd
+  imagePullSecrets:
+    name: myregistrykey
 ```
 
 ### spec.containers <[]object>
@@ -428,6 +430,16 @@ spec:
           value: info
 ```
 
+### StatefulSet
+
+```
+
+```
+
+
+
+
+
 ## Service
 
 ```
@@ -515,6 +527,185 @@ spec:
           serviceName: tomcat
           servicePort: 8080
 ```
+
+## volume
+
+emptyDir
+
+```
+spec:
+  containers:
+    volumeMounts:
+    - name: html
+      mountPath: /data/web/html/
+      readOnly: false
+
+volumes:
+- name: html
+  emptyDir: {}
+```
+
+hostPath
+
+```
+volumes:
+- name: html
+  hostPath:
+    path: /data/pod/volume1
+    type: DirectoryOrCreate
+```
+
+NFS
+
+```
+volumes:
+- name: html
+  nfs: /data/volumes/pod1
+  server: store01.zsjshao.net
+  readOnly: false
+```
+
+## PersistentVolume
+
+```
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv003
+  labels: 
+    name: pv003
+spec:
+  nfs:
+    path: /data/volumes/v3
+    server: stor01.zsjshao.net
+  accessModes: ["ReadWriteMany","ReadWriteOnce","ReadOnlyMany"]
+  capacity:
+    storage: 2Gi
+```
+
+## PersistentVolumeClaim
+
+```
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mypvc
+  namespace: default
+spec:
+  accessModes: ["ReadWriteMany"]
+  resources:
+    requests:
+      storage: 2Gi
+---
+
+spec:
+  containers:
+    volumeMounts:
+    - name: html
+      mountPath: /data/web/html/
+      readOnly: false
+  volumes:
+  - name: html
+    persistentVolumeClaim:
+      claimName: mypvc
+```
+
+## ConfigMap
+
+from-literal
+
+```
+kubectl create configmap nginx-port --from-literal=port=80
+```
+
+
+
+```
+apiVersion: v1
+data:
+  port: "80"
+kind: ConfigMap
+metadata:
+  name: nginx-port
+  namespace: default
+
+---
+spec:
+  containers:
+    env:
+    - name: NGINX_SERVER_PORT
+      valueFrom:
+        configMapKeyRef:
+          name: nginx-port
+          key: port          
+          optional: true
+
+---
+spec:
+  containers:
+    volumeMounts:
+    - name: nginxport
+      mountPath: /etc/nginx/nginxport/
+      readOnly: false
+  volumes:
+  - name: nginxport
+    configMap
+      name: nginx-port
+```
+
+from-file
+
+```
+
+```
+
+
+
+
+
+## Secret
+
+```
+kubectl create secret generic mysql-root-password --from-literal=password=MyP@ss123
+```
+
+
+
+```
+apiVersion: v1
+data:
+  password: TXlQQHNzMTIz
+kind: Secret
+metadata:
+  name: mysql-root-password
+  namespace: default
+type: Opaque
+
+---
+spec:
+  containers:
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      valueFrom:
+        SecretKeyRef:
+          name: mysql-root-password
+          key: password          
+          optional: true
+```
+
+echo TXlQQHNzMTIz | base64 -d
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
