@@ -416,3 +416,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 # . /etc/profile.d/jdk.sh
 ```
 
+
+
+JAVA_OPTS="$JAVA_OPTS -server"
