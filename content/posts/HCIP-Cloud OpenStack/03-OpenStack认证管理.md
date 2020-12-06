@@ -292,7 +292,7 @@ UUID，PKI，PKIZ令牌都会持久存放在数据库中，累积的令牌容易
 
 - Region的数量影响PKI/PKIZ令牌的大小
 - 从安全的角度上看，UUID无需维护密钥，PKI需要妥善保管Keystone server上的私钥，Fernet需要周期性的更换密钥。
-- 因此从安全、维护成本和成熟度上看，UUID > PKI/PKIZ > Fernet
+- 因此从安全、维护成本和成熟度上看，UUID > PKI/PKIZ > Fernet
 
 如果：
 
