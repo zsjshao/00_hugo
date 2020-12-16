@@ -31,6 +31,8 @@ categories = ["HCIP_Cloud OpenStack"]
 
 OpenStack是开源云操作系统，可控制整个数据中心的大型计算、存储和网络资源池。
 
+- Cloud OS Kernel 云操作系统内核
+
 用户能够通过Web界面、命令行或API接口配置资源。
 
 OpenStack社区网站：www.openstack.org
@@ -96,6 +98,13 @@ Apache2.0 License
 OpenStack每年两个大版本，一般在4月和10月中旬发布，版本命名从字母A-Z。
 
 ![OpenStack概述](http://images.zsjshao.net/huawei/HCIP-Cloud-OpenStack/01/5.png)
+
+版本：https://releases.openstack.org/
+
+```
+查看当前OpenStack版本
+rpm -qa | grep nova
+```
 
 ## 2、OpenStack架构
 
