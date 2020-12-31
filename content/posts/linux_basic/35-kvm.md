@@ -422,6 +422,8 @@ See man page for examples and full option syntax.
 [root@c81 src]# qemu-img create -f qcow2 /var/lib/libvirt/images/centos.qcow2 10G
 
 [root@c81 src]# virt-install --virt-type kvm --name centos8 --memory 1024 --vcpus 2 --cdrom=/usr/local/src/CentOS-8.1.1911-x86_64-dvd1.iso --disk path=/var/lib/libvirt/images/centos.qcow2 --network network=default --graphics vnc,listen=0.0.0.0 --noautoconsole
+
+[root@c81 src]# cat /etc/libvirt/qemu/centos8.xml
 ```
 
 ##### 2.2.3.2、通过VNC客户端连并安装虚拟机：
@@ -525,5 +527,15 @@ virsh start CentOS-7-x86_64 #正常关机
 virsh destroy centos7 #强制停止/关机
 virsh undefine Win_2008_r2-x86_64 #强制删除
 virsh autostart centos7 #设置开机自启动
+
+vim /etc/default/grub
+GRUB_CMDLINE_LINUX="... console=ttyS0"
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+virsh console centos7
+
+默认ttyS设备
+ls /dev/ttyS
+ttyS0  ttyS1  ttyS2  ttyS3 
 ```
 
