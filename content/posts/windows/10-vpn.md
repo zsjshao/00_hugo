@@ -1,3 +1,12 @@
++++
+author = "zsjshao"
+title = "10_VPN"
+date = "2022-08-04"
+tags = ["windows"]
+categories = ["windows"]
+
++++
+
 ## VPN是什么
 
 vpn-远程访问
