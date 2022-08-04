@@ -15,7 +15,7 @@ categories = ["RS"]
 
 要完成以太网的数据封装，需要知道目的设备的MAC地址；
 
-![01_arp](http://images.zsjshao.net/rs/03-arp/01_arp.png)
+![01_arp](http://images.zsjshao.cn/images/rs/03-arp/01_arp.png)
 
 ### 1.2、ARP协议概述
 
@@ -31,7 +31,7 @@ ARP缓存表
 
 ARP报文格式
 
-![02_arp](http://images.zsjshao.net/rs/03-arp/02_arp.png)
+![02_arp](http://images.zsjshao.cn/images/rs/03-arp/02_arp.png)
 
 网络设备通过ARP报文来发现目的MAC地址。ARP报文中包含以下字段：
 
@@ -50,7 +50,7 @@ ARP报文格式
 
 ### 2.1、ARP工作流程
 
-![03_arp](http://images.zsjshao.net/rs/03-arp/03_arp.png)
+![03_arp](http://images.zsjshao.cn/images/rs/03-arp/03_arp.png)
 
 PC1查看ARP表，如果ARP表中没有PC3的IP地址对应的表项，则发送ARP请求包，ARP请求PC3的MAC地址；
 
@@ -68,7 +68,7 @@ PC1收到来自PC3的ARP应答数据包，将PC3的IP-MAC映射信息加载到�
 
 源主机收到ARP reply后，将目的主句的IP-MAC对应关系添加进ARP表中，完成数据的以太网封装，进行数据交互
 
-![04_arp](http://images.zsjshao.net/rs/03-arp/04_arp.png)
+![04_arp](http://images.zsjshao.cn/images/rs/03-arp/04_arp.png)
 
 ### 2.3、ARP缓存表
 
@@ -116,7 +116,7 @@ Total number of ARP entries: 2
 - 确定其它设备的 IP地址是否与本机 IP地址冲突
 - 更改了地址，通知其他设备更新 ARP表项
 
-![05_arp](http://images.zsjshao.net/rs/03-arp/05_arp.png)
+![05_arp](http://images.zsjshao.cn/images/rs/03-arp/05_arp.png)
 
 ### 3.2、代理ARP（Proxy ARP ）
 
@@ -128,7 +128,7 @@ Total number of ARP entries: 2
 
 - 收到该ARP请求的接口与路由表下一跳不是同一个接口
 
-![06_arp](http://images.zsjshao.net/rs/03-arp/06_arp.png)
+![06_arp](http://images.zsjshao.cn/images/rs/03-arp/06_arp.png)
 
 ### 3.3、RARP
 

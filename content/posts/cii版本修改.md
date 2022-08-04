@@ -73,8 +73,6 @@ update t_common_config set "value" = '1.5.0' where "commonKey" = 'version.rack';
 
 ![cii_01](http://images.zsjshao.net/cii/cii_01.png)
 
-
-
 查看当前平台相关版本信息
 
 ```

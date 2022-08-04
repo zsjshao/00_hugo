@@ -21,7 +21,7 @@ RGOS全称“锐捷通用操作系统”，即网络设备的操作系统
 - 故障隔离，提升新功能开发测试效率和系统稳定性
 - 对于硬件平台透明，兼容性高
 
-![01_rgos](http://images.zsjshao.net/rs/06-rgos/01_rgos.png)
+![01_rgos](http://images.zsjshao.cn/images/rs/06-rgos/01_rgos.png)
 
 ### 1.2、锐捷设备的常用登陆方式
 
@@ -41,7 +41,7 @@ RGOS全称“锐捷通用操作系统”，即网络设备的操作系统
 
 - SecureCRT、xshell、Putty、超级终端（仅XP有）
 
-![02_rgos](http://images.zsjshao.net/rs/06-rgos/02_rgos.png)
+![02_rgos](http://images.zsjshao.cn/images/rs/06-rgos/02_rgos.png)
 
 #### 1.2.4、使用Console登入
 
@@ -59,9 +59,9 @@ Console管理配置
 - 停止位：1
 - 数据流控：无
 
-![03_rgos](http://images.zsjshao.net/rs/06-rgos/03_rgos.png)
+![03_rgos](http://images.zsjshao.cn/images/rs/06-rgos/03_rgos.png)
 
-![04_rgos](http://images.zsjshao.net/rs/06-rgos/04_rgos.png)
+![04_rgos](http://images.zsjshao.cn/images/rs/06-rgos/04_rgos.png)
 
 #### 1.2.5、Telnet远程管理
 
@@ -83,7 +83,7 @@ C:\Users\zengs>telnet 10.1.1.254 23
 使用CMD直接telnet（需要开启telnet功能）
 ```
 
-![05_rgos](http://images.zsjshao.net/rs/06-rgos/05_rgos.png)
+![05_rgos](http://images.zsjshao.cn/images/rs/06-rgos/05_rgos.png)
 
 #### 1.2.6、SSH远程管理
 
@@ -107,7 +107,7 @@ Ruijie(config)#enable service ssh-server
 Ruijie(config)#crypto key generate {rsa|dsa}
 ```
 
-![06_rgos](http://images.zsjshao.net/rs/06-rgos/06_rgos.png)
+![06_rgos](http://images.zsjshao.cn/images/rs/06-rgos/06_rgos.png)
 
 #### 1.2.7、登陆软件：xshell
 
@@ -115,14 +115,14 @@ Ruijie(config)#crypto key generate {rsa|dsa}
 
 - 根据锐捷网络技术服务部《JSZD-001技术服务部员工行为奖惩条例》工程师在网操作规范第3条：携带工程师个人电脑进入客户网络时，需要提前做好电脑的杀毒等工作，以避免由于电脑病毒影响客户网络正常使用，**且开启记录功能（包括Telnet的控制台开启Log日志打印功能）**
 
-![07_rgos](http://images.zsjshao.net/rs/06-rgos/07_rgos.png)
+![07_rgos](http://images.zsjshao.cn/images/rs/06-rgos/07_rgos.png)
 
 ##### 1.2.7.2、撰写栏
 
 - 当日志快速滚动刷屏无法键入时可以使用撰写栏
 - 在撰写栏键入命令，可以在多个会话窗口执行
 
-![08_rgos](http://images.zsjshao.net/rs/06-rgos/08_rgos.png)
+![08_rgos](http://images.zsjshao.cn/images/rs/06-rgos/08_rgos.png)
 
 ## 2、CLI命令行操作
 
@@ -132,7 +132,7 @@ Ruijie(config)#crypto key generate {rsa|dsa}
 
 相对CMD的命令行，RGOS的CLI使用便捷，具备丰富提示信息与错误信息
 
-![09_rgos](http://images.zsjshao.net/rs/06-rgos/09_rgos.png)
+![09_rgos](http://images.zsjshao.cn/images/rs/06-rgos/09_rgos.png)
 
 ### 2.2、CLI模式
 
@@ -158,7 +158,7 @@ Ruijie(config)#crypto key generate {rsa|dsa}
 
 ### 2.3、CLI模式互换
 
-![10_rgos](http://images.zsjshao.net/rs/06-rgos/10_rgos.png)
+![10_rgos](http://images.zsjshao.cn/images/rs/06-rgos/10_rgos.png)
 
 ### 2.4、命令行特性-分屏显示
 
@@ -169,7 +169,7 @@ Ruijie(config)#crypto key generate {rsa|dsa}
 - 使用“回车”键可以逐行显示
 - 使用“空格”键可以翻页
 
-![11_rgos](http://images.zsjshao.net/rs/06-rgos/11_rgos.png)
+![11_rgos](http://images.zsjshao.cn/images/rs/06-rgos/11_rgos.png)
 
 ### 2.5、命令行特性-命令缩写及获取帮助
 
@@ -439,7 +439,7 @@ Ruijie#traceroute 192.168.100.10 source 10.1.1.1 probe 10 ttl 1 3 timeout 3
 
 ### 4.1、RGOS的文件系统
 
-![12_rgos](http://images.zsjshao.net/rs/06-rgos/12_rgos.png)
+![12_rgos](http://images.zsjshao.cn/images/rs/06-rgos/12_rgos.png)
 
 flash中保存的数据时掉电不丢失的数据：
 

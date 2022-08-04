@@ -11,15 +11,15 @@ categories = ["RS"]
 
 ### 1.1、场景描述1
 
-![01_dhcp](http://images.zsjshao.net/rs/04-dhcp/01_dhcp.png)
+![01_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/01_dhcp.png)
 
 ### 1.2、场景描述2
 
-![02_dhcp](http://images.zsjshao.net/rs/04-dhcp/02_dhcp.png)
+![02_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/02_dhcp.png)
 
 ### 1.3、场景描述3
 
-![03_dhcp](http://images.zsjshao.net/rs/04-dhcp/03_dhcp.png)
+![03_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/03_dhcp.png)
 
 ## 2、DHCP协议工作原理
 
@@ -31,7 +31,7 @@ DHCP（Dynamic Host Configuration Protocol），动态主机配置协议
 
 DHCP报文格式和BootP（RFC951、RFC1542）报文兼容，保证了互操作
 
-![04_dhcp](http://images.zsjshao.net/rs/04-dhcp/04_dhcp.png)
+![04_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/04_dhcp.png)
 
 ### 2.2、DHCP协议名词解释
 
@@ -43,7 +43,7 @@ DHCP Server
 
 - DHCP服务器，为终端分配网络参数，管理地址池
 
-![05_dhcp](http://images.zsjshao.net/rs/04-dhcp/05_dhcp.png)
+![05_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/05_dhcp.png)
 
 ### 2.3、DHCP服务器配置
 
@@ -61,7 +61,7 @@ ip dhcp pool Ruijie
 
 ### 2.4、PC的DHCP设置
 
-![06_dhcp](http://images.zsjshao.net/rs/04-dhcp/06_dhcp.png)
+![06_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/06_dhcp.png)
 
 释放通过DHCP方式获取到的IP地址
 
@@ -86,7 +86,7 @@ C:\Users>ipconfig /renew
 
 ### 2.5、DHCP协议工作过程
 
-![07_dhcp](http://images.zsjshao.net/rs/04-dhcp/07_dhcp.png)
+![07_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/07_dhcp.png)
 
 ### 2.6、DHCP协议报文及用途
 
@@ -107,25 +107,25 @@ C:\Users>ipconfig /renew
 
 该报文为PC发出的第一个请求报文，为`广播报文`，主要作用是用来发现DHCP服务器，但PC并不知道DHCP的IP地址，因此目的MAC和目的IP地址都为广播
 
-![08_dhcp](http://images.zsjshao.net/rs/04-dhcp/08_dhcp.png)
+![08_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/08_dhcp.png)
 
 #### 2.7.2、DHCP Offer
 
 该报文为DHCP服务器返回的第一个报文，当网络中存在多台DHCP服务器时，PC只会保留先收到的DHCP Offer。DHCP Offer中包含DHCP服务器可以为PC分配的IP地址、网关IP、DNS参数等配置信息
 
-![09_dhcp](http://images.zsjshao.net/rs/04-dhcp/09_dhcp.png)
+![09_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/09_dhcp.png)
 
 #### 2.7.3、DHCP Request
 
 PC发出的第二条请求报文，PC根据服务器返回的Offer中的信息，发起正式申请。
 
-![10_dhcp](http://images.zsjshao.net/rs/04-dhcp/10_dhcp.png)
+![10_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/10_dhcp.png)
 
 #### 2.7.4、DHCP ACK
 
 服务器收到PC的请求报文后，从地址池中分配相应的IP地址返回给PC
 
-![11_dhcp](http://images.zsjshao.net/rs/04-dhcp/11_dhcp.png)
+![11_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/11_dhcp.png)
 
 ### 2.8、DHCP协议的租约
 
@@ -151,7 +151,7 @@ PC发出的第二条请求报文，PC根据服务器返回的Offer中的信息�
 
 ### 3.1、校园网中常见的DHCP服务部署方式
 
-![12_dhcp](http://images.zsjshao.net/rs/04-dhcp/12_dhcp.png)
+![12_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/12_dhcp.png)
 
 方式一：网关交换机作为DHCP服务器
 
@@ -167,7 +167,7 @@ PC发出的第二条请求报文，PC根据服务器返回的Offer中的信息�
 
 每台汇聚网关交换机上都为其下联用户PC网段配置DHCP地址池
 
-![13_dhcp](http://images.zsjshao.net/rs/04-dhcp/13_dhcp.png)
+![13_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/13_dhcp.png)
 
 ```
 Step 1. 开启DHCP服务
@@ -190,7 +190,7 @@ ip address 172.16.20.1 255.255.255.0
 
 要保证作为DHCP中继的网关设备与DHCP服务器之间IP/路由可达
 
-![14_dhcp](http://images.zsjshao.net/rs/04-dhcp/14_dhcp.png)
+![14_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/14_dhcp.png)
 
 ```
 Step1：网关设备的DHCP中继配置：
@@ -218,7 +218,7 @@ Windows Server/Linux/专用设备
 
 使用DHCP Snooping相关功能，可以实现防止下联用户使用静态IP地址接入网络（ip source guard功能）
 
-![15_dhcp](http://images.zsjshao.net/rs/04-dhcp/15_dhcp.png)
+![15_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/15_dhcp.png)
 
 ```
 接入交换机上配置：
@@ -237,7 +237,7 @@ ip verify source port-security
 
 以下为DHCP Snooping配置步骤：
 
-![16_dhcp](http://images.zsjshao.net/rs/04-dhcp/16_dhcp.png)
+![16_dhcp](http://images.zsjshao.cn/images/rs/04-dhcp/16_dhcp.png)
 
 ```
 Step1：接入交换机上开启DHCP Snooping

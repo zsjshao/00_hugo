@@ -16,9 +16,9 @@ categories = ["RS"]
 - 工作在OSI模型的数据链路层，使用PPP协议封装数据帧
 - PPP与以太网一样工作在数据链路层
 
-![01_ppp](http://images.zsjshao.net/rs/18-ppp/01_ppp.png)
+![01_ppp](http://images.zsjshao.cn/images/rs/18-ppp/01_ppp.png)
 
-![02_ppp](http://images.zsjshao.net/rs/18-ppp/02_ppp.png)
+![02_ppp](http://images.zsjshao.cn/images/rs/18-ppp/02_ppp.png)
 
 ### 1.2、PPP协议层次介绍
 
@@ -27,7 +27,7 @@ PPP协议层次介绍：
 - PPP协议包含两个子协议：链路层控制协议LCP、网络层控制协议NCP
 - PPP协议的NCP部分上跨到了OSI参考模型的三层，因此PPP还具有部分网络层的功能
 
-![03_ppp](http://images.zsjshao.net/rs/18-ppp/03_ppp.png)
+![03_ppp](http://images.zsjshao.cn/images/rs/18-ppp/03_ppp.png)
 
 ## 2、PPP协议工作原理
 
@@ -39,21 +39,21 @@ PPP会话建立：
 - 认证阶段（可选）：PAP和CHAP两种认证方式
 - NCP网络层协议协商阶段
 
-![04_ppp](http://images.zsjshao.net/rs/18-ppp/04_ppp.png)
+![04_ppp](http://images.zsjshao.cn/images/rs/18-ppp/04_ppp.png)
 
 ### 2.2、PPP会话建立协商过程
 
 阶段1：LCP协商阶段
 
-![05_ppp](http://images.zsjshao.net/rs/18-ppp/05_ppp.png)
+![05_ppp](http://images.zsjshao.cn/images/rs/18-ppp/05_ppp.png)
 
 阶段2：身份认证阶段（可选）
 
-![06_ppp](http://images.zsjshao.net/rs/18-ppp/06_ppp.png)
+![06_ppp](http://images.zsjshao.cn/images/rs/18-ppp/06_ppp.png)
 
 阶段3：IPCP协商阶段
 
-![07_ppp](http://images.zsjshao.net/rs/18-ppp/07_ppp.png)
+![07_ppp](http://images.zsjshao.cn/images/rs/18-ppp/07_ppp.png)
 
 ## 3、PPP协议基础配置
 
@@ -81,7 +81,7 @@ Router(config-if)# ppp authentication {chap | chap pap | pap chap | pap}
 
 ppp authentication pap命令指定本地为验证方，验证方需要配置被验证方的用户名密码列表。
 
-![08_ppp](http://images.zsjshao.net/rs/18-ppp/08_ppp.png)
+![08_ppp](http://images.zsjshao.cn/images/rs/18-ppp/08_ppp.png)
 
 PAP认证，接口状态验证
 
@@ -133,13 +133,13 @@ Interface address is: 1.1.1.2/24
 
 ppp authentication pap命令指定本地为验证方，验证方需要配置被验证方的用户名密码列表。
 
-![09_ppp](http://images.zsjshao.net/rs/18-ppp/09_ppp.png)
+![09_ppp](http://images.zsjshao.cn/images/rs/18-ppp/09_ppp.png)
 
 ### 3.4、PPP典型配置案例（CHAP单向认证）
 
 ppp authentication chap命令指定本地为验证方，验证方需要配置被验证方的用户名密码列表。
 
-![10_ppp](http://images.zsjshao.net/rs/18-ppp/10_ppp.png)
+![10_ppp](http://images.zsjshao.cn/images/rs/18-ppp/10_ppp.png)
 
 接口状态信息验证
 
@@ -191,7 +191,7 @@ Interface address is: 1.1.1.2/24
 
 ppp authentication chap命令指定本地为验证方，验证方需要配置被验证方的用户名密码列表。
 
-![11_ppp](http://images.zsjshao.net/rs/18-ppp/11_ppp.png)
+![11_ppp](http://images.zsjshao.cn/images/rs/18-ppp/11_ppp.png)
 
 接口状态信息验证
 

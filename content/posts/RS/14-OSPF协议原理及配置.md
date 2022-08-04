@@ -42,7 +42,7 @@ OSPF目前应用中有两个版本：
 
 如图，当10.1.0.0/24访问10.2.0.0/24时，数据从F0/1出去，此时是次优路径，需要修改开销值
 
-![01_ospf](http://images.zsjshao.net/rs/14-ospf/01_ospf.png)
+![01_ospf](http://images.zsjshao.cn/images/rs/14-ospf/01_ospf.png)
 
 - 方案一：在OSPF进程中使用该命令可以修改度量值计算基数，避免这种问题，1000指链路带宽为1000M
 
@@ -71,11 +71,11 @@ Ruijie(config-if)#ip ospf cost 200
 
 **邻接（Adjacency）**：形成邻居关系的双方不一定都能形成邻接关系，当两台路由设备之间交换链路状态信息，并根据形成的数据库计算出OSPF路由，才能称为邻接关系
 
-![02_ospf](http://images.zsjshao.net/rs/14-ospf/02_ospf.png)
+![02_ospf](http://images.zsjshao.cn/images/rs/14-ospf/02_ospf.png)
 
 ### 1.4、OSPF的关键要素之五种报文
 
-![03_ospf](http://images.zsjshao.net/rs/14-ospf/03_ospf.png)
+![03_ospf](http://images.zsjshao.cn/images/rs/14-ospf/03_ospf.png)
 
 ### 1.5、OSPF的关键要素之三张表
 
@@ -146,11 +146,11 @@ O   172.16.2.0 [110/65] via 10.1.0.1, 00:07:27, Serial0/1/0
 
 ### 1.7、OSPF的工作过程
 
-![04_ospf](http://images.zsjshao.net/rs/14-ospf/04_ospf.png)
+![04_ospf](http://images.zsjshao.cn/images/rs/14-ospf/04_ospf.png)
 
 ### 1.8、OSPF的邻居发现过程
 
-![05_ospf](http://images.zsjshao.net/rs/14-ospf/05_ospf.png)
+![05_ospf](http://images.zsjshao.cn/images/rs/14-ospf/05_ospf.png)
 
 通过Hello报文发现邻居，记录在邻居表
 
@@ -170,15 +170,15 @@ Hello报文对OSPF邻居建立至关重要，其中对应字段必须匹配才�
 - 接口子网掩码：在以太网环境下，掩码必须一致
 - 接口网络类型：必须一致，影响路由计算
 
-![06_ospf](http://images.zsjshao.net/rs/14-ospf/06_ospf.png)
+![06_ospf](http://images.zsjshao.cn/images/rs/14-ospf/06_ospf.png)
 
 ### 1.10、OSPF的链路状态摘要交换过程
 
-![07_ospf](http://images.zsjshao.net/rs/14-ospf/07_ospf.png)
+![07_ospf](http://images.zsjshao.cn/images/rs/14-ospf/07_ospf.png)
 
 ### 1.11、OSPF的详细链路状态信息同步过程
 
-![08_ospf](http://images.zsjshao.net/rs/14-ospf/08_ospf.png)
+![08_ospf](http://images.zsjshao.cn/images/rs/14-ospf/08_ospf.png)
 
 ### 1.12、OSPF的路由计算与路由表加载
 
@@ -186,7 +186,7 @@ Hello报文对OSPF邻居建立至关重要，其中对应字段必须匹配才�
 
 - 同步后，同一区域的OSPF路由器，LSDB一定是相同的
 
-![09_ospf](http://images.zsjshao.net/rs/14-ospf/09_ospf.png)
+![09_ospf](http://images.zsjshao.cn/images/rs/14-ospf/09_ospf.png)
 
 
 
@@ -207,7 +207,7 @@ DR、BDR的机制减少了在同一广播域中邻接的数量，减少了该链
 - 如果两两建立邻接需要15对邻接
 - 如果DR机制，只需要8对邻接
 
-![10_ospf](http://images.zsjshao.net/rs/14-ospf/10_ospf.png)
+![10_ospf](http://images.zsjshao.cn/images/rs/14-ospf/10_ospf.png)
 
 ### 1.14、OSPF的DR、BDR的选举
 
@@ -221,7 +221,7 @@ DR和BDR一旦选定，即使OSPF区域内新增优先级更高的路由设备�
 
 优先级是基于接口的，修改命令如下
 
-![11_ospf](http://images.zsjshao.net/rs/14-ospf/11_ospf.png)
+![11_ospf](http://images.zsjshao.cn/images/rs/14-ospf/11_ospf.png)
 
 ```
 config)#int vlan 10
@@ -236,7 +236,7 @@ OSPF的状态随着邻居建立、数据库同步、邻接建立、路由计算�
 
 若状态停留在过渡状态，需要根据信息判断故障点
 
-![12_ospf](http://images.zsjshao.net/rs/14-ospf/12_ospf.png)
+![12_ospf](http://images.zsjshao.cn/images/rs/14-ospf/12_ospf.png)
 
 ## 2、OSPF的基本配置
 
@@ -250,7 +250,7 @@ OSPF的状态随着邻居建立、数据库同步、邻接建立、路由计算�
 
 区域内路由无法汇总，需要维护的路由表越来越大，资源消耗过多，性能下降，影响数据转发
 
-![13_ospf](http://images.zsjshao.net/rs/14-ospf/13_ospf.png)
+![13_ospf](http://images.zsjshao.cn/images/rs/14-ospf/13_ospf.png)
 
 #### 2.1.1、OSPF的单区域问题解决方案
 
@@ -262,7 +262,7 @@ OSPF的状态随着邻居建立、数据库同步、邻接建立、路由计算�
 - 提高了网络的稳定性和的扩展性，有利于组建大规模的网络
 - 在区域边界可以做路由汇总，减小了路由表
 
-![14_ospf](http://images.zsjshao.net/rs/14-ospf/14_ospf.png)
+![14_ospf](http://images.zsjshao.cn/images/rs/14-ospf/14_ospf.png)
 
 ### 2.2、OSPF多区域层次化
 
@@ -274,7 +274,7 @@ Area 0为骨干区域，所有其他区域设备都至少有一个接口属于Ar
 - 常规区域
 - 末节区域(特殊)
 
-![15_ospf](http://images.zsjshao.net/rs/14-ospf/15_ospf.png)
+![15_ospf](http://images.zsjshao.cn/images/rs/14-ospf/15_ospf.png)
 
 ### 2.3、OSPF多区域环境路由器类型
 
@@ -290,7 +290,7 @@ Area 0为骨干区域，所有其他区域设备都至少有一个接口属于Ar
 - 区域间路由信息必须通过ABR才能进出区域
 - ABR是区域路由信息的进出口,也是区域间数据的进出口
 
-![16_ospf](http://images.zsjshao.net/rs/14-ospf/16_ospf.png)
+![16_ospf](http://images.zsjshao.cn/images/rs/14-ospf/16_ospf.png)
 
 ### 2.4、单区域OSPF案例
 
@@ -299,7 +299,7 @@ OSPF路由案例1需求
 - 在三台路由器上配置OSPF路由，配置OSPF进程号为10
 - 配置OSPF区域全为0，使PC1和PC2能ping通PC3
 
-![17_ospf](http://images.zsjshao.net/rs/14-ospf/17_ospf.png)
+![17_ospf](http://images.zsjshao.cn/images/rs/14-ospf/17_ospf.png)
 
 #### 2.4.1、基础配置
 
@@ -458,7 +458,7 @@ OSPF路由案例2需求：
 - 在三台路由器上配置OSPF路由，配置OSPF进程号为10
 - 按照拓扑图配置OSPF区域，使PC1和PC2能ping通PC3
 
-![18_ospf](http://images.zsjshao.net/rs/14-ospf/18_ospf.png)
+![18_ospf](http://images.zsjshao.cn/images/rs/14-ospf/18_ospf.png)
 
 #### 2.5.1、基本配置
 

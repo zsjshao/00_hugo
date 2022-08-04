@@ -12,7 +12,7 @@ categories = ["RS"]
 
 IP地址规划和VLAN设计是园区网建设规划阶段的一项重要内容，不合理的规划会直接影响日后的管理和维护
 
-![01_vlan](http://images.zsjshao.net/rs/22-vlan/01_vlan.png)
+![01_vlan](http://images.zsjshao.cn/images/rs/22-vlan/01_vlan.png)
 
 ### 1.2、什么是IP/VLAN规划设计？
 
@@ -24,17 +24,17 @@ IP / VLAN规划，就是为接入园区网的所有设备，包括交换机、�
 
 IP地址取值范围（常规局域网内网场景）。根据业务需求和网络规模进行合理子网划分。
 
-![02_vlan](http://images.zsjshao.net/rs/22-vlan/02_vlan.png)
+![02_vlan](http://images.zsjshao.cn/images/rs/22-vlan/02_vlan.png)
 
 VLAN规划取值范围：1-4094。（VLAN 1默认存在）
 
-![03_vlan](http://images.zsjshao.net/rs/22-vlan/03_vlan.png)
+![03_vlan](http://images.zsjshao.cn/images/rs/22-vlan/03_vlan.png)
 
 ### 1.4、如何进行IP/VLAN规划设计？
 
 Step 1：明确客户需求和各功能区网络场景，以及用户规模，制定网络拓扑。
 
-![04_vlan](http://images.zsjshao.net/rs/22-vlan/04_vlan.png)
+![04_vlan](http://images.zsjshao.cn/images/rs/22-vlan/04_vlan.png)
 
 Step 2：规划设备命名、以及接口互联描述。
 
@@ -54,23 +54,23 @@ Step 2：规划设备命名、以及接口互联描述。
 
 Step 3：设备互联及互联IP地址规划.XLS
 
-![05_vlan](http://images.zsjshao.net/rs/22-vlan/05_vlan.png)
+![05_vlan](http://images.zsjshao.cn/images/rs/22-vlan/05_vlan.png)
 
 Step 4：有线IP/VLAN规划设计.XLS
 
-![06_vlan](http://images.zsjshao.net/rs/22-vlan/06_vlan.png)
+![06_vlan](http://images.zsjshao.cn/images/rs/22-vlan/06_vlan.png)
 
 Step 5：无线IP/VLAN规划设计.XLS
 
-![07_vlan](http://images.zsjshao.net/rs/22-vlan/07_vlan.png)
+![07_vlan](http://images.zsjshao.cn/images/rs/22-vlan/07_vlan.png)
 
 Step 6：设备管理IP/VLAN规划设计.XLS
 
-![08_vlan](http://images.zsjshao.net/rs/22-vlan/08_vlan.png)
+![08_vlan](http://images.zsjshao.cn/images/rs/22-vlan/08_vlan.png)
 
 Step 7：服务器及设备登录管理方式.XLS
 
-![09_vlan](http://images.zsjshao.net/rs/22-vlan/09_vlan.png)
+![09_vlan](http://images.zsjshao.cn/images/rs/22-vlan/09_vlan.png)
 
 Step 8：整理汇总
 
@@ -86,7 +86,7 @@ Step 8：整理汇总
 
 不同的sub vlan是不同的广播域，三层通信借助super vlan的SVI接口，通过代理arp完成
 
-![10_vlan](http://images.zsjshao.net/rs/22-vlan/10_vlan.png)
+![10_vlan](http://images.zsjshao.cn/images/rs/22-vlan/10_vlan.png)
 
 ### 2.2、Super VLAN的配置步骤
 
@@ -133,21 +133,21 @@ Sub VLAN不能配置路由口，不能配置 IP 地址。
 
 #### 2.4.1、QinQ部署模型
 
-![11_vlan](http://images.zsjshao.net/rs/22-vlan/11_vlan.png)
+![11_vlan](http://images.zsjshao.cn/images/rs/22-vlan/11_vlan.png)
 
 #### 2.4.2、QinQ场景通信实现原理
 
 - 访问外网-arp学习过程
 
-![12_vlan](http://images.zsjshao.net/rs/22-vlan/12_vlan.png)
+![12_vlan](http://images.zsjshao.cn/images/rs/22-vlan/12_vlan.png)
 
 - 访问外网-三层报文转发
 
-![13_vlan](http://images.zsjshao.net/rs/22-vlan/13_vlan.png)
+![13_vlan](http://images.zsjshao.cn/images/rs/22-vlan/13_vlan.png)
 
 #### 2.4.3、QinQ部署案例
 
-![14_vlan](http://images.zsjshao.net/rs/22-vlan/14_vlan.png)
+![14_vlan](http://images.zsjshao.cn/images/rs/22-vlan/14_vlan.png)
 
 | **位置**   | **学生上网OVID** | **学生上网IVID** | **网管** | **一卡通** | **监控** | **门禁** | **其它** |
 | ---------- | ---------------- | ---------------- | -------- | ---------- | -------- | -------- | -------- |
@@ -168,11 +168,11 @@ Sub VLAN不能配置路由口，不能配置 IP 地址。
 
 锐捷交换机默认情况下native VLAN为1，建议实际项目中将trunk端口的native VLAN设置为非业务VLAN
 
-![15_vlan](http://images.zsjshao.net/rs/22-vlan/15_vlan.png)
+![15_vlan](http://images.zsjshao.cn/images/rs/22-vlan/15_vlan.png)
 
 ### 3.1、Native VLAN的应用案例
 
 无线本地转发模式下，POE下联AP的接口需要配置Native VLAN为AP所在的VLAN。本地转发即AP将STA的802.11数据转换为以太数据后，不再将其通过CAPWAP隧道转发给AC，而是直接通过上联口将数据转发至有线网络中。
 
-![16_vlan](http://images.zsjshao.net/rs/22-vlan/16_vlan.png)
+![16_vlan](http://images.zsjshao.cn/images/rs/22-vlan/16_vlan.png)
 

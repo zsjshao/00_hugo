@@ -17,7 +17,7 @@ categories = ["RS"]
 
 当唯一的网关设备发生故障时，所有主机都无法与外部网络通信
 
-![01_vrrp](http://images.zsjshao.net/rs/11-vrrp/01_vrrp.png)
+![01_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/01_vrrp.png)
 
 ### 1.2、解决方案
 
@@ -27,7 +27,7 @@ VRRP（虚拟路由冗余协议 Virtual Router Redundancy Protocol）解决局�
 
 VRRP将一组路由器（或三层交换机）组成一个备份组，生成一台虚拟路由器，使用一个虚拟IP地址为主机提供默认网关服务
 
-![02_vrrp](http://images.zsjshao.net/rs/11-vrrp/02_vrrp.png)
+![02_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/02_vrrp.png)
 
 ## 2、VRRP工作原理
 
@@ -64,7 +64,7 @@ VRRP报文承载在IP报文之上，使用协议号112
 
 VRRP报文使用的IP组播地址是224.0.0.18
 
-![03_vrrp](http://images.zsjshao.net/rs/11-vrrp/03_vrrp.png)
+![03_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/03_vrrp.png)
 
 ### 2.3、VRRP的三种状态
 
@@ -74,7 +74,7 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 备份状态(Backup)：VRRP组中的路由器通过VRRP报文交换后确定的**处于监听**的一种状态
 
-![04_vrrp](http://images.zsjshao.net/rs/11-vrrp/04_vrrp.png)
+![04_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/04_vrrp.png)
 
 ### 2.4、VRRP工作原理
 
@@ -92,7 +92,7 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 **工作过程：**
 
-![05_vrrp](http://images.zsjshao.net/rs/11-vrrp/05_vrrp.png)
+![05_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/05_vrrp.png)
 
 ### 2.5、VRRP接口跟踪
 
@@ -100,7 +100,7 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 当上行链路不可用时，路由器VRRP优先级将降低，该路由器不再是Master，备份路由器将成为新的Master
 
-![06_vrrp](http://images.zsjshao.net/rs/11-vrrp/06_vrrp.png)
+![06_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/06_vrrp.png)
 
 ## 3、VRRP相关配置
 
@@ -113,7 +113,7 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 示例：在汇聚交换机上部署VRRP，使得VLAN 10的主网关是SWA，备份网关是SWB
 
-![07_vrrp](http://images.zsjshao.net/rs/11-vrrp/07_vrrp.png)
+![07_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/07_vrrp.png)
 
 ```
 在SWA上配置VRRP组
@@ -183,7 +183,7 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 - show vrrp brief 
 
-![08_vrrp](http://images.zsjshao.net/rs/11-vrrp/08_vrrp.png)
+![08_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/08_vrrp.png)
 
 ### 3.4、VRRP负载均衡
 
@@ -191,5 +191,5 @@ VRRP报文使用的IP组播地址是224.0.0.18
 
 如下图所示：
 
-![09_vrrp](http://images.zsjshao.net/rs/11-vrrp/09_vrrp.png)
+![09_vrrp](http://images.zsjshao.cn/images/rs/11-vrrp/09_vrrp.png)
 

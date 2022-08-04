@@ -22,7 +22,7 @@ ICMP协议有两个重要应用，在Windows系统与RGOS中经常会使用到
 
 - tracert
 
-![01_windows](http://images.zsjshao.net/rs/05-windows/01_windows.png)
+![01_windows](http://images.zsjshao.cn/images/rs/05-windows/01_windows.png)
 
 ### 1.2、ICMP信息反馈
 
@@ -45,7 +45,7 @@ ICMP协议有两个重要应用，在Windows系统与RGOS中经常会使用到
 
 - 作用：基于ICMP协议，测试网络联通性
 
-![02_windows](http://images.zsjshao.net/rs/05-windows/02_windows.png)
+![02_windows](http://images.zsjshao.cn/images/rs/05-windows/02_windows.png)
 
 - 默认情况下，ping操作会收到4个ICMP回包，包大小为32字节，TTL等于64。
 - 操作演示：
@@ -154,7 +154,7 @@ C:\Users\zengs>ping www.baidu.com -l 1600 -f
   - 收到目标主机的应答后程序终止
   - *号表示探测包丢失
 
-![03_windows](http://images.zsjshao.net/rs/05-windows/03_windows.png)
+![03_windows](http://images.zsjshao.cn/images/rs/05-windows/03_windows.png)
 
 - 运营商核心骨干网及大型IDC数据中心为了安全起见一般会通过相关技术做到核心路径隐藏，此时tracert并非实际路径跟踪
 

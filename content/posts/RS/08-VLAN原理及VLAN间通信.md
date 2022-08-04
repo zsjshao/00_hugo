@@ -17,13 +17,13 @@ categories = ["RS"]
 - 级联的二层交换机组成一个巨大的广播域
 - 广播数据在广播域中洪泛，占用网络带宽，降低设备性能，导致安全隐患
 
-![01_vlan](http://images.zsjshao.net/rs/08-vlan/01_vlan.png)
+![01_vlan](http://images.zsjshao.cn/images/rs/08-vlan/01_vlan.png)
 
 - 公司大楼的五层和六层均有技术部和财务部的办公室
 - 客户要求部门内部是可以互相通讯的，但部门之间要求相互二层隔离
 - 为了实现需求，需要采用划分VLAN的方式实现
 
-![02_vlan](http://images.zsjshao.net/rs/08-vlan/02_vlan.png)
+![02_vlan](http://images.zsjshao.cn/images/rs/08-vlan/02_vlan.png)
 
 ### 1.2、VLAN概述
 
@@ -45,7 +45,7 @@ VLAN的用途
 - 控制不必要的广播的扩散，从而提高网络带宽利用率，减少资源浪费
 - 划分不同的用户组，对组之间的访问进行限制，从而增加安全性
 
-![03_vlan](http://images.zsjshao.net/rs/08-vlan/03_vlan.png)
+![03_vlan](http://images.zsjshao.cn/images/rs/08-vlan/03_vlan.png)
 
 ### 1.3、VLAN标准
 
@@ -54,7 +54,7 @@ VLAN的用途
 - 交换机用VLAN标签区分不同VLAN的以太网帧
 - 802.1Q规定了VLAN的标签信息及标签格式
 
-![04_vlan](http://images.zsjshao.net/rs/08-vlan/04_vlan.png)
+![04_vlan](http://images.zsjshao.cn/images/rs/08-vlan/04_vlan.png)
 
 ### 1.4、交换机端口类型
 
@@ -66,7 +66,7 @@ Trunk端口
 
 - 可以允许多个VLAN通过，它发出的帧一般是带有VLAN标签的，一般用于交换机之间连接的端口
 
-![05_vlan](http://images.zsjshao.net/rs/08-vlan/05_vlan.png)
+![05_vlan](http://images.zsjshao.cn/images/rs/08-vlan/05_vlan.png)
 
 ### 1.5、802.1Q标准封装
 
@@ -82,11 +82,11 @@ Trunk端口
 - Priority：3bit，表示优先级，用于QoS
 - Canonical format indicator：1bit，表示总线型以太网、FDDI、令牌环网
 
-![06_vlan](http://images.zsjshao.net/rs/08-vlan/06_vlan.png)
+![06_vlan](http://images.zsjshao.cn/images/rs/08-vlan/06_vlan.png)
 
 ### 1.6、VLAN工作原理
 
-![07_vlan](http://images.zsjshao.net/rs/08-vlan/07_vlan.png)
+![07_vlan](http://images.zsjshao.cn/images/rs/08-vlan/07_vlan.png)
 
 ### 1.7、Native VLAN
 
@@ -113,7 +113,7 @@ Trunk端口
 
 查看**VLAN**状态与端口状态
 
-![08_vlan](http://images.zsjshao.net/rs/08-vlan/08_vlan.png)
+![08_vlan](http://images.zsjshao.cn/images/rs/08-vlan/08_vlan.png)
 
 ### 2.2、VLAN基本配置
 
@@ -200,7 +200,7 @@ VLAN Name                             Status    Ports
 
 路由器软件转发IP报文，如果VLAN间路由数据量较大，会消耗大量CPU资源，造成转发性能瓶颈
 
-![09_vlan](http://images.zsjshao.net/rs/08-vlan/09_vlan.png)
+![09_vlan](http://images.zsjshao.cn/images/rs/08-vlan/09_vlan.png)
 
 ### 3.2、VLAN间通信 —— 三层交换机
 
@@ -212,7 +212,7 @@ VLAN Name                             Status    Ports
 
 三层交换基于IP地址，使用硬件ASIC技术，转发速度高
 
-![10_vlan](http://images.zsjshao.net/rs/08-vlan/10_vlan.png)
+![10_vlan](http://images.zsjshao.cn/images/rs/08-vlan/10_vlan.png)
 
 ### 3.3、交换机表项的建立与数据转发
 
@@ -222,18 +222,18 @@ PC1和PC2连接在同一台三层交换机上，位于不同的VLAN，从PC1 pin
 
 - 2）交换机发送**ARP应答**（包含VLAN10的MAC），同时**更新ARP表项与MAC地址表**（ PC1的IP和MAC地址）
 
-![11_vlan](http://images.zsjshao.net/rs/08-vlan/11_vlan.png)
+![11_vlan](http://images.zsjshao.cn/images/rs/08-vlan/11_vlan.png)
 
 - 3）PC1发送目的IP地址为192.168.20.2的ICMP请求
 - 4）交换机收到ICMP请求，根据报文的**目的MAC是VLAN10接口MAC**，判断该报文为**三层转发报文**
 - 5）**交换机根据报文目的IP地址192.168.20.2查找三层转发表项，起初并未建立任何记录，交换机将查找软件路由表，发现一个直连路由，继续查找软件ARP表，起初ARP表中没有关于PC2的表项，交换机继续向VLAN20所有端口发送ARP请求，以获取PC2的MAC地址**
 - 6）PC2收到交换机发送的ARP请求，发送ARP应答，并将自己的MAC地址包含其中
 
-![12_vlan](http://images.zsjshao.net/rs/08-vlan/12_vlan.png)
+![12_vlan](http://images.zsjshao.cn/images/rs/08-vlan/12_vlan.png)
 
 - 7）交换机收到PC2的ARP应答，记录PC2的IP和MAC地址对应关系到自己的ARP表，并将PC1的ICMP请求发送给PC2。交换机将在三层转发表项中添加表项（包含IP、MAC、VLAN、出端口），后续的PC1发往PC2的报文就可以直接通过硬件三层表项直接转发。
 - 8）PC2收到交换机转发过来的ICMP请求，将回应ICMP应答给交换机，交换机将直接把应答报文由硬件三层交换转发给PC1
 - 9）**后续报文都经过查MAC表、查三层转发表的过程，直接进入硬件转发。**
 
-![13_vlan](http://images.zsjshao.net/rs/08-vlan/13_vlan.png)
+![13_vlan](http://images.zsjshao.cn/images/rs/08-vlan/13_vlan.png)
 

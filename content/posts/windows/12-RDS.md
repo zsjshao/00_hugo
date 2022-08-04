@@ -1,0 +1,1 @@
+https://docs.microsoft.com/zh-cn/windows/win32/termserv/terminal-services-portal

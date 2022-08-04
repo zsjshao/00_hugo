@@ -18,7 +18,7 @@ Fat AP的特点：
 - 通常AP都会有单独的网页或者命令行配置页面
 - 用户使用时，无需其他附属设备，采用单独的AP即可提供无线接入功能，组网相对简
 
-![01_ap](http://images.zsjshao.net/rs/20-ap/01_ap.png)
+![01_ap](http://images.zsjshao.cn/images/rs/20-ap/01_ap.png)
 
 ### 1.2、FAT AP组网模式
 
@@ -28,7 +28,7 @@ Fat AP的特点：
 - 传统的企业无线网采用的是胖AP的组网模式，管理操作极为困难。
 - 大型的胖AP组网中，可使用MACC进行统一的管理操作。
 
-![02_ap](http://images.zsjshao.net/rs/20-ap/02_ap.png)
+![02_ap](http://images.zsjshao.cn/images/rs/20-ap/02_ap.png)
 
 ### 1.3、FIT AP概述
 
@@ -43,7 +43,7 @@ Fit AP的特点：
 - 安全认证策略全面
 - L2、L3漫游，适合大规模组网
 
-![03_ap](http://images.zsjshao.net/rs/20-ap/03_ap.png)
+![03_ap](http://images.zsjshao.cn/images/rs/20-ap/03_ap.png)
 
 ### 1.4、FIT AP组网模式
 
@@ -55,7 +55,7 @@ Fit AP的特点：
 
 AC通过和AP之间建立CAPWAP隧道来控制和管理AP
 
-![04_ap](http://images.zsjshao.net/rs/20-ap/04_ap.png)
+![04_ap](http://images.zsjshao.cn/images/rs/20-ap/04_ap.png)
 
 ### 1.5、组网模式优劣势比较
 
@@ -99,7 +99,7 @@ AP110-W
 
 默认情况下锐捷胖AP web管理地址为192.168.110.1，telnet密码是admin，无enable密码
 
-![05_ap](http://images.zsjshao.net/rs/20-ap/05_ap.png)
+![05_ap](http://images.zsjshao.cn/images/rs/20-ap/05_ap.png)
 
 **信息规划**：
 
@@ -242,11 +242,11 @@ AP收到配置信息后，开始工作，广播SSID，接入无线用户
 
 有线网络搭建（VLAN、DHCP、路由等）
 
-![06_ap](http://images.zsjshao.net/rs/20-ap/06_ap.png)
+![06_ap](http://images.zsjshao.cn/images/rs/20-ap/06_ap.png)
 
 #### 3.2.2、ap启动
 
-AP零配置启动，通过DHCP获取IP地址及网关IP，同时通过option138获取AC IP地址![07_ap](http://images.zsjshao.net/rs/20-ap/07_ap.png)
+AP零配置启动，通过DHCP获取IP地址及网关IP，同时通过option138获取AC IP地址![07_ap](http://images.zsjshao.cn/images/rs/20-ap/07_ap.png)
 
 #### 3.2.3、capwap隧道建立
 
@@ -254,41 +254,41 @@ AP主动建立到达AC的CAPWAP隧道
 
 - **CAPWAP：无线接入点控制与配置协议**
 
-![08_ap](http://images.zsjshao.net/rs/20-ap/08_ap.png)
+![08_ap](http://images.zsjshao.cn/images/rs/20-ap/08_ap.png)
 
 #### 3.2.4、配置下发
 
 AP与AC建立隧道成功后，AC下发配置信息给AP
 
-![09_ap](http://images.zsjshao.net/rs/20-ap/09_ap.png)
+![09_ap](http://images.zsjshao.cn/images/rs/20-ap/09_ap.png)
 
 #### 3.2.5、信号发射
 
 AP获取配置后，广播SSID供STA关联并接入STA
 
-![10_ap](http://images.zsjshao.net/rs/20-ap/10_ap.png)
+![10_ap](http://images.zsjshao.cn/images/rs/20-ap/10_ap.png)
 
 #### 3.2.6、AP数据转发
 
 AP将STA发出的802.11数据转换为以太数据并通过CAPWAP隧道转发给AC
 
-![11_ap](http://images.zsjshao.net/rs/20-ap/11_ap.png)
+![11_ap](http://images.zsjshao.cn/images/rs/20-ap/11_ap.png)
 
 #### 3.2.7、AC数据转发
 
 AC将收到的数据解封装并进行转发至有线网络中
 
-![12_ap](http://images.zsjshao.net/rs/20-ap/12_ap.png)
+![12_ap](http://images.zsjshao.cn/images/rs/20-ap/12_ap.png)
 
 有线网络返回数据到AC，AC将数据通过CAPWAP隧道转发至AP
 
-![13_ap](http://images.zsjshao.net/rs/20-ap/13_ap.png)
+![13_ap](http://images.zsjshao.cn/images/rs/20-ap/13_ap.png)
 
 #### 3.2.8、AP数据转发
 
 AP根据配置信息将以太数据转换为802.11数据，转发给STA
 
-![14_ap](http://images.zsjshao.net/rs/20-ap/14_ap.png)
+![14_ap](http://images.zsjshao.cn/images/rs/20-ap/14_ap.png)
 
 ### 3.3、瘦AP架构配置步骤（集中式转发）
 
@@ -309,15 +309,15 @@ AP根据配置信息将以太数据转换为802.11数据，转发给STA
 
 - 单核心二层结构：**AC与核心之间双线互连**
 
-![15_ap](http://images.zsjshao.net/rs/20-ap/15_ap.png)
+![15_ap](http://images.zsjshao.cn/images/rs/20-ap/15_ap.png)
 
 - 单核心二层结构：AC与核心之间单线互连
 
-![16_ap](http://images.zsjshao.net/rs/20-ap/16_ap.png)
+![16_ap](http://images.zsjshao.cn/images/rs/20-ap/16_ap.png)
 
 #### 3.3.2、制作AP信息表
 
-![17_ap](http://images.zsjshao.net/rs/20-ap/17_ap.png)
+![17_ap](http://images.zsjshao.cn/images/rs/20-ap/17_ap.png)
 
 #### 3.3.3、DHCP及路由规划
 
@@ -327,7 +327,7 @@ AP网段和无线用户网段的DHCP服务器规划
 - AP的地址池中需要定义Option 138选项，内容为AC的Loopback0地址
 - 配置STA的地址池（略）
 
-![18_ap](http://images.zsjshao.net/rs/20-ap/18_ap.png)
+![18_ap](http://images.zsjshao.cn/images/rs/20-ap/18_ap.png)
 
 ```
 核心交换机：
@@ -346,7 +346,7 @@ Ip route 0.0.0.0 0.0.0.0 下一跳地址（核心端）
 
 在AC定义WLAN
 
-![19_ap](http://images.zsjshao.net/rs/20-ap/19_ap.png)
+![19_ap](http://images.zsjshao.cn/images/rs/20-ap/19_ap.png)
 
 在AC上定义VLAN
 
@@ -360,7 +360,7 @@ interface vlan 10     //创建无线用户VLAN的三层SVI接口
 - 将无线用户所属的WLAN与VLAN进行关联映射
 - 一个group下面可以配置多个WLAN与VLAN的映射关系
 
-![20_ap](http://images.zsjshao.net/rs/20-ap/20_ap.png)
+![20_ap](http://images.zsjshao.cn/images/rs/20-ap/20_ap.png)
 
 在POE交换机连接AP的接口上打开POE供电
 
@@ -375,7 +375,7 @@ AP加组
 - 等待AP与AC建立CAPWAP隧道后，AP的信息会自动出现在AC的配置中
 - 如下所示,为一台RG-AP520-I关联上AC之后,在AC配置中自动出现的信息
 
-![21_ap](http://images.zsjshao.net/rs/20-ap/21_ap.png)
+![21_ap](http://images.zsjshao.cn/images/rs/20-ap/21_ap.png)
 
 定义WLAN的安全参数（可选）
 
@@ -392,7 +392,7 @@ wlansec 100
 
 查看CAPWAP隧道状态
 
-![22_ap](http://images.zsjshao.net/rs/20-ap/22_ap.png)
+![22_ap](http://images.zsjshao.cn/images/rs/20-ap/22_ap.png)
 
 - 如果上述信息为空或者缺少部分信息:
   - 1、检查POE交换机是否对相应AP供电,接口是否poe enable
@@ -401,11 +401,11 @@ wlansec 100
 
 查看AP上线
 
-![23_ap](http://images.zsjshao.net/rs/20-ap/23_ap.png)
+![23_ap](http://images.zsjshao.cn/images/rs/20-ap/23_ap.png)
 
 查看无线用户上线
 
-![24_ap](http://images.zsjshao.net/rs/20-ap/24_ap.png)
+![24_ap](http://images.zsjshao.cn/images/rs/20-ap/24_ap.png)
 
 #### 3.3.5、瘦AP配置小结
 
