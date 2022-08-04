@@ -1,3 +1,12 @@
++++
+author = "zsjshao"
+title = "07_DHCP"
+date = "2022-08-04"
+tags = ["windows"]
+categories = ["windows"]
+
++++
+
 ## 1、DHCP介绍
 
 ### 1.1、为什么要使用DHCP
