@@ -1,3 +1,12 @@
++++
+author = "zsjshao"
+title = "08_DNS"
+date = "2022-08-04"
+tags = ["windows"]
+categories = ["windows"]
+
++++
+
 ## 1、DNS作用
 
 企业有必要有自己DNS服务器？
