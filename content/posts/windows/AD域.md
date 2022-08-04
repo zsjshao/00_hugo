@@ -1,3 +1,11 @@
++++
+author = "zsjshao"
+title = "01_AD域"
+date = "2022-08-04"
+tags = ["windows"]
+categories = ["windows"]
++++
+
 ## AD域
 
 https://docs.microsoft.com/zh-cn/windows-server/identity/ad-ds/ad-ds-getting-started
