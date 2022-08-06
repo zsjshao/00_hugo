@@ -64,8 +64,12 @@ Invoke-Command -ComputerName app01,app02 -ScriptBlock { Install-WindowsFeature -
 2、dhcp授权
 
 ```
+# 在app01上执行命令
 netsh dhcp add securitygroups
 Add-DhcpServerInDC -DnsName app01.zsjshao.cn
+
+# 在app02上执行命令
+netsh dhcp add securitygroups
 Add-DhcpServerInDC -DnsName app02.zsjshao.cn
 ```
 
