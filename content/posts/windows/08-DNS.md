@@ -84,12 +84,49 @@ SRV记录
 1、启用GlobalNames区域
 
 ```
-PS C:\> Set-DnsServerGlobalNameZone -Enable
-或
-C:\> dnscmd dc1.zsjshao.cn /config /enableglobalnamessupport 1
+PS C:\Users\Administrator> Set-DnsServerGlobalNameZone -Enable $true -PassThru
+
+Enable              : True
+GlobalOverLocal     : False
+PreferAAAA          : False
+AlwaysQueryServer   : False
+EnableEDnsProbes    : True
+BlockUpdates        : True
+SendTimeout(s)      : 3
+ServerQueryInterval : 06:00:00
 ```
 
+或
 
+```
+C:\> dnscmd /config /enableglobalnamessupport 1
+```
+
+2、在GlobalNames区域新建别名，将dc解析到dc1
+
+![dnsglobalnames01](http://images.zsjshao.cn/images/windows/dnsglobalnames01.png)
+
+> 注意：若无GlobalNames区域请先创建
+
+3、ping测试
+
+```c
+PS C:\Users\Administrator> ping dc
+
+正在 Ping dc1.zsjshao.cn [10.0.0.1] 具有 32 字节的数据:
+来自 10.0.0.1 的回复: 字节=32 时间<1ms TTL=128
+来自 10.0.0.1 的回复: 字节=32 时间<1ms TTL=128
+来自 10.0.0.1 的回复: 字节=32 时间<1ms TTL=128
+来自 10.0.0.1 的回复: 字节=32 时间<1ms TTL=128
+
+10.0.0.1 的 Ping 统计信息:
+    数据包: 已发送 = 4，已接收 = 4，丢失 = 0 (0% 丢失)，
+往返行程的估计时间(以毫秒为单位):
+    最短 = 0ms，最长 = 0ms，平均 = 0ms
+PS C:\Users\Administrator>
+```
+
+> 注意：回复的是dc1，与查找域不同
 
 
 

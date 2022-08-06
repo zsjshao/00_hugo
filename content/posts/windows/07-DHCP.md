@@ -74,7 +74,7 @@ DHCP共有八种报文
 
 | 服务器名称          | IP地址       | 网关       |
 | ------------------- | ------------ | ---------- |
-| app.zsjshao.cn      | 10.0.0.10/8  | 10.0.0.254 |
+| app-01.zsjshao.cn   | 10.0.0.10/8  | 10.0.0.254 |
 | app-02.zsjshao.cn   | 10.0.0.11/8  | 10.0.0.254 |
 | client01.zsjshao.cn | DHCP自动获取 |            |
 
@@ -99,7 +99,8 @@ DHCP共有八种报文
 Install-WindowsFeature -Name dhcp -IncludeManagementTools
 
 # 域授权
-Add-DhcpServerInDC -DnsName app.zsjshao.cn -IPAddress 10.0.0.10
+netsh dhcp add securitygroups
+Add-DhcpServerInDC -DnsName app-01.zsjshao.cn -IPAddress 10.0.0.10
 
 # 非域环境执行下面命令授权
 netsh dhcp add securitygroups
@@ -403,13 +404,13 @@ Windows IP 配置
 
 | 服务器名称          |             IP地址             |    网关    |
 | :------------------ | :----------------------------: | :--------: |
-| app.zsjshao.cn      |          10.0.0.10/8           | 10.0.0.254 |
+| app-01.zsjshao.cn   |          10.0.0.10/8           | 10.0.0.254 |
 | router.zsjshao.cn   | 10.0.0.254/8<br />20.0.0.254/8 |            |
 | client01.zsjshao.cn |          DHCP自动获取          |            |
 
 > 注意：以上主机都已加域，域环境配置参考AD域配置
 
-1、在app服务器上创建20.x/8作用域
+1、在app-01服务器上创建20.x/8作用域
 
 ![dhcprelay01](http://images.zsjshao.cn/images/windows/dhcprelay01.png)
 
@@ -493,7 +494,7 @@ Windows IP 配置
 
 | 服务器名称          | IP地址       | 网关       |
 | ------------------- | ------------ | ---------- |
-| app.zsjshao.cn      | 10.0.0.10/8  | 10.0.0.254 |
+| app-01.zsjshao.cn   | 10.0.0.10/8  | 10.0.0.254 |
 | app-02.zsjshao.cn   | 10.0.0.11/8  | 10.0.0.254 |
 | client01.zsjshao.cn | DHCP自动获取 |            |
 
