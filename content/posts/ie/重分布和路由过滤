@@ -1,0 +1,113 @@
+acl
+
+prefix-list
+
+distribute-list
+
+filter-list
+
+route-map
+
+
+
+acl
+
+A  127.255.255.255
+
+
+
+prefix-list
+
+A  0.0.0.0/1 le 32
+
+B 128.0.0.0/2 le 32
+
+C 192.0.0.0/3 le 32
+
+
+
+Route-map
+
+也叫路由图或者路由映射表，是对路由进行加工处理的工具。
+
+1、route-map 可以调用ACL或prefix抓出一部分路由进行加工处理
+
+2、每一个route-map可以有多条语句，每条语句都有一个序号
+
+3、每条语句都有两种动作：match和set
+
+4、每条语句对抓出来的路由都有两种处理方式：permit或deny
+
+
+
+route-map的使用分三步操作：
+
+1、定义ACL或prefix抓出路由
+
+2、定义route-map说明对匹配的路由所采取的处理方式
+
+3、调用route-map
+
+
+
+route-map的匹配逻辑：
+
+```
+route-map NAME permit 10
+ match ip address x y z
+                  --------> OR
+ match ip address a  |
+ match tag b  |     AND
+ match ip address c  ⬇
+```
+
+如不写match/set，默认：match any
+
+​                                             set nothing
+
+
+
+PBR：基于策略的路由
+
+接口：ip policy route-map NAME
+
+全局：ip local policy route-map NAME
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

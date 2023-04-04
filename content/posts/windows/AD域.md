@@ -252,7 +252,7 @@ l 【Dialup】（拨号组）。包括任何当前存在拨号连接的用户。
 Add-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
 $DSRMPW = ConvertTo-SecureString "1234.com" -AsPlainText -Force
-Install-ADDSForest -DomianName "zsjshao.cn" -SafeModeAdministratorPassword $DSRMPW -Force:$true
+Install-ADDSForest -DomainName "zsjshao.cn" -SafeModeAdministratorPassword $DSRMPW -Force:$true
 ```
 
 ### AD与DNS分离

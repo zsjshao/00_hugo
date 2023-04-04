@@ -4,6 +4,7 @@ title = "04_文件编辑工具vim"
 date = "2020-05-01"
 tags = ["linux_basic","vim"]
 categories = ["linux_basic"]
+
 +++
 # vim
 
