@@ -1,3 +1,13 @@
++++
+author = "zsjshao"
+title = "BGP"
+date = "2023-04-04"
+tags = ["BGP"]
+categories = ["IE"]
+
++++
+
+
 ### AS
 
 每一个自治系统都有一个AS号

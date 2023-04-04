@@ -1,3 +1,12 @@
++++
+author = "zsjshao"
+title = "BGP"
+date = "2023-04-04"
+tags = ["OSPF"]
+categories = ["IE"]
+
++++
+
 ### OSPF的基本特性
 
 OSPF属于IGP，是Link-State协议，基于IP Pro 89
