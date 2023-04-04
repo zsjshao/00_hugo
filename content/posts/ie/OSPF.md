@@ -1,6 +1,6 @@
 +++
 author = "zsjshao"
-title = "BGP"
+title = "OSPF"
 date = "2023-04-04"
 tags = ["OSPF"]
 categories = ["IE"]
