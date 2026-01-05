@@ -158,7 +158,71 @@ Sub VLAN不能配置路由口，不能配置 IP 地址。
 | 楼宇1接入2 | NA               | 1-48             | 100      | 1001       | 1002     | 1003     | 1000+n   |
 | 楼宇N接入N | NA               | 1-48             | 100      | 1001       | 1002     | 1003     | 1000+n   |
 
-## 3、Native VLAN 
+## 3、Private VLAN
+
+### 应用场景：
+
+Private VLAN的主要功能就是能够实现节约IP地址，隔离广播风暴，病毒攻击，控制端口二层互访。特别适用于大二层结构的环境，用户多，vlan多，但是IP地址又是同一个网段，又要实现彼此之间二层隔离，个别VLAN之间又有互访的需求。常见的场景有宾馆酒店，小区宽带接入，运营商与高校共建的校园网等，他们的特点是一个房间或者一户人家一个vlan，彼此隔离，但是IP地址有限，无法给数量庞大的vlan每个分一个网段IP，只能共用一个IP地址段，比如vlan 10的IP地址段10.10.10.0/24，这样一户人家可能就使用了1-2个IP，造成剩余200多个ip地址浪费。  
+
+另一种比较典型的PVLAN应用类似于端口隔离功能（[switchport protected](https://search.ruijie.com.cn:8902/kq/h52018092015040500221.html)），即将所有用户端口设置为隔离VLAN（**(**Isolated Port），这样即使同一vlan，同一网段的IP之间的用户也无法访问，可以有效隔离病毒传播。  
+
+
+
+服务提供商如果给每个用户一个VLAN，则由于一台设备支持的VLAN数最大只有4096而限制了服务提供商能支持的用户数；在三层设备上，每个VLAN被分配一个子网地址或一系列地址，这种情况导致IP地址的浪费；另外同一个vlan内的广播风暴，病毒攻击等安全问题让维护人员非常头疼，等等的这些问题的一种解决方法就是应用Private VLAN 技术。
+
+### 功能简介：
+
+Private VLAN将一个VLAN 的二层广播域划分成多个子域，每个子域都由一个私有VLAN对组成：主VLAN(Primary VLAN)和辅助VLAN(Secondary VLAN)。
+
+在一个Private VLAN域中所有的私有VLAN对共享同一个主VLAN，每个子域的辅助VLAN ID 不同。一个Private VLAN域中只有一个主VLAN，有两种类型的辅助VLAN：
+
+**隔离VLAN(Isolated VLAN)：**同一个隔离VLAN 中的端口不能互相进行二层通信，一个私有VLAN 域中只有一个隔离VLAN。
+
+**群体VLAN(Community VLAN)：**同一个群体VLAN 中的端口可以互相进行二层通信，但不能与其它群体VLAN 中的端口进行二层通信。一个Private VLAN域中可以有多个群体VLAN。
+
+  
+
+在一个Private VLAN域内通常有三种常见的端口角色，通过定义交换机上面不通的端口的角色可以实现各用户间的二层互访，还是隔离的效果：
+
+**混杂端口（Promiscuous Port），**属于主VLAN 中的端口，可以与任意端口通讯，包括同一个Private VLAN域中辅助VLAN的隔离端口和群体端口，通常是交换机上联网关设备的端口。
+
+**隔离端口(Isolated Port)，**隔离VLAN 中的端口彼此之间不能通信，只能与混杂口通讯。通常是下联接入用户端的接口。
+
+**群体端口(Community port)，**属于群体VLAN 中的端口，同一个群体VLAN 的群体端口可以互相通讯，也可以与混杂口通讯，不能与其它群体VLAN 中的群体端口及隔离VLAN 中的隔离端口通讯。通常是下联接入用户端的接口。
+
+  
+
+Private VLAN域中，只有主VLAN 可以创建SVI 接口，配置IP作为网关使用，辅助VLAN 不可以创建SVI。
+
+### 配置命令
+
+```
+SWITCHA(config)#vlan 20
+SWITCHA(config-vlan)#private-vlan community   ------>创建团体vlan20
+SWITCHA(config)#vlan 30
+SWITCHA(config-vlan)#private-vlan isolated    ------>创建隔离vlan30
+SWITCHA(config)#vlan 10
+SWITCHA(config-vlan)#private-vlan primary     ------>创建主vlan，并关联secondary vlan
+SWITCHA(config-vlan)#private-vlan association 20,30
+
+SWITCHA(config)#int range g0/10-11
+SWITCHA(config-if-range)#switchport mode private-vlan host
+SWITCHA(config-if-range)#switchport private-vlan host-association 10 20 ------>将10,11端口加入团体vlan20
+SWITCHA(config)#int g0/12
+SWITCHA(config-if-GigabitEthernet 0/12)#switchport mode private-vlan host
+SWITCHA(config-if-GigabitEthernet 0/12)#switchport private-vlan host-association 10 30    ------>将12端口加入隔离vlan30
+
+同级别交换机设为普通trunk
+SWITCHA(config)#interface g0/1
+SWITCHA(config-if-GigabitEthernet 0/1)#switchport mode trunk
+
+同网关交换机设为混杂trunk
+SWITCHA(config)#interface g0/24
+SWITCHA(config-if-GigabitEthernet 0/24)#switchport mode private-vlan promiscuous
+SWITCHA(config-if-GigabitEthernet 0/24)#switchport private-vlan mapping 10 add 20,30
+```
+
+## 4、Native VLAN 
 
 属于Native VLAN的数据帧在trunk链路上不携带VLAN 标签传输
 
@@ -170,7 +234,7 @@ Sub VLAN不能配置路由口，不能配置 IP 地址。
 
 ![15_vlan](http://images.zsjshao.cn/images/rs/22-vlan/15_vlan.png)
 
-### 3.1、Native VLAN的应用案例
+### 4.1、Native VLAN的应用案例
 
 无线本地转发模式下，POE下联AP的接口需要配置Native VLAN为AP所在的VLAN。本地转发即AP将STA的802.11数据转换为以太数据后，不再将其通过CAPWAP隧道转发给AC，而是直接通过上联口将数据转发至有线网络中。
 

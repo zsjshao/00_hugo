@@ -1,0 +1,204 @@
+{
+  "main": {
+    "id": "f53fcfb7559c505b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c51f2c948c5bc5e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0c936e6fe4a8955",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-云计算简介"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7b9645f82521e4c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "41eb298b178addb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "121cb1732f8a80c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f9a02a419c338dad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5d2966ca347fcc24",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "911c965717c16948",
+    "type": "split",
+    "children": [
+      {
+        "id": "090caf2470a5e0c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40c60a72b7e5b241",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 01-云计算简介"
+            }
+          },
+          {
+            "id": "4a9f40a875f9e96e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 01-云计算简介"
+            }
+          },
+          {
+            "id": "2b918534df10602e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "318dd052c305d84e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "635b190e9602519d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 01-云计算简介"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c0c936e6fe4a8955",
+  "lastOpenFiles": [
+    "content/posts/Linux/shell/04-条件测试.md.baiduyun.p.downloading",
+    "content/posts/Linux/shell/03-算术运算.md.baiduyun.p.downloading",
+    "content/posts/Linux/shell/02-变量.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/43-EwoMail邮件系统部署.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/42-ELK.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/41-Jenkins.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/39-Tomcat.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/38-web技术和java.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/37-jumpserver.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/36-openvpn.md.baiduyun.p.downloading",
+    "content/posts/Linux/linux_basic/35-kvm.md.baiduyun.p.downloading",
+    "content/posts/5G/5G原理及系统架构.md",
+    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+    "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
+    "content/posts/计算机学习方向.md"
+  ]
+}
