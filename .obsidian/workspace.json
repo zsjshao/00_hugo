@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/华为/HCIA-Datacom/8、生成树.md",
+                "file": "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "8、生成树"
+              "title": "1、数据通信网络基础"
             }
           }
         ]
@@ -183,8 +183,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9db594b804719e5c",
+  "active": "121cb1732f8a80c3",
   "lastOpenFiles": [
+    "content/posts/华为/HCIA-Datacom/8、生成树.md",
     "content/posts/华为/HCIA-Datacom/8、生成树.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png",
@@ -194,12 +195,10 @@
     "新建 文本文档.txt",
     "content/posts/华为/HCIA-Datacom/VXLAN.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/VXLAN.md",
-    "content/posts/华为/HCIA-Datacom/8、生成树.md",
     "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
     "content/posts/Linux/shell/04-条件测试.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/03-算术运算.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/02-变量.md.baiduyun.p.downloading",
-    "content/posts/Linux/linux_basic/43-EwoMail邮件系统部署.md.baiduyun.p.downloading",
     "content/posts/5G/5G原理及系统架构.md",
     "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
     "content/posts/计算机学习方向.md"
