@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8c51f2c948c5bc5e",
+        "id": "3b11aae57a87c6df",
         "type": "tabs",
         "children": [
           {
-            "id": "c0c936e6fe4a8955",
+            "id": "9db594b804719e5c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "01-云计算简介"
+              "title": "新标签页"
             }
           }
         ]
@@ -44,7 +40,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01-云计算简介"
+              "title": "反向链接"
             }
           },
           {
@@ -174,17 +169,22 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false
     }
   },
-  "active": "c0c936e6fe4a8955",
+  "active": "9db594b804719e5c",
   "lastOpenFiles": [
+    "content/posts/华为/HCIA-Datacom/VXLAN.md.baiduyun.uploading.cfg",
+    "content/posts/华为/HCIA-Datacom/VXLAN.md",
+    "content/posts/华为/HCIA-Datacom/8、生成树.md.baiduyun.uploading.cfg",
+    "content/posts/华为/HCIA-Datacom/8、生成树.md",
+    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
     "content/posts/Linux/shell/04-条件测试.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/03-算术运算.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/02-变量.md.baiduyun.p.downloading",
@@ -194,10 +194,7 @@
     "content/posts/Linux/linux_basic/39-Tomcat.md.baiduyun.p.downloading",
     "content/posts/Linux/linux_basic/38-web技术和java.md.baiduyun.p.downloading",
     "content/posts/Linux/linux_basic/37-jumpserver.md.baiduyun.p.downloading",
-    "content/posts/Linux/linux_basic/36-openvpn.md.baiduyun.p.downloading",
-    "content/posts/Linux/linux_basic/35-kvm.md.baiduyun.p.downloading",
     "content/posts/5G/5G原理及系统架构.md",
-    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
     "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
     "content/posts/计算机学习方向.md"
   ]
