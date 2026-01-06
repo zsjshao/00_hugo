@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3b11aae57a87c6df",
+        "id": "1fd85d928ffb69ba",
         "type": "tabs",
         "children": [
           {
-            "id": "9db594b804719e5c",
+            "id": "32672eed5a6276ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
+                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1、数据通信网络基础"
+              "title": "ISIS"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "ISIS 的反向链接列表"
             }
           },
           {
@@ -112,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01-云计算简介"
+              "title": "ISIS 的出链列表"
             }
           },
           {
@@ -127,12 +128,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
+                "useHierarchy": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "标签"
             }
           },
           {
@@ -146,7 +147,7 @@
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
-              "title": "All properties"
+              "title": "添加笔记属性"
             }
           },
           {
@@ -164,7 +165,8 @@
               "title": "Outline of 01-云计算简介"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -183,8 +185,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "121cb1732f8a80c3",
+  "active": "32672eed5a6276ea",
   "lastOpenFiles": [
+    "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
+    "content/gg.md",
+    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
+    "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
+    "content/posts/华为/HCIA-Datacom/2、网络参考模型.md",
+    "content/posts/华为/HCIA-Datacom/1、数据通信网络基础 1.md",
     "content/posts/华为/HCIA-Datacom/8、生成树.md",
     "content/posts/华为/HCIA-Datacom/8、生成树.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png.baiduyun.uploading.cfg",
@@ -195,12 +203,10 @@
     "新建 文本文档.txt",
     "content/posts/华为/HCIA-Datacom/VXLAN.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/VXLAN.md",
-    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
     "content/posts/Linux/shell/04-条件测试.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/03-算术运算.md.baiduyun.p.downloading",
     "content/posts/Linux/shell/02-变量.md.baiduyun.p.downloading",
     "content/posts/5G/5G原理及系统架构.md",
-    "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
     "content/posts/计算机学习方向.md"
   ]
 }

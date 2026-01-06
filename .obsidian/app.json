@@ -1,5 +1,7 @@
 {
   "newLinkFormat": "relative",
   "useMarkdownLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "showLineNumber": false,
+  "useTab": false
 }
