@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
+                "file": "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ISIS"
+              "title": "1、数据通信网络基础"
             }
           }
         ]
@@ -187,6 +187,7 @@
   },
   "active": "32672eed5a6276ea",
   "lastOpenFiles": [
+    "content/posts/华为/HCIA-Datacom/ISIS.md",
     "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
     "content/gg.md",
     "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
