@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "认证"
             }
+          },
+          {
+            "id": "6ce5903252919dc7",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.11.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,17 +188,17 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:创建新数据库": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "32672eed5a6276ea",
+  "active": "6ce5903252919dc7",
   "lastOpenFiles": [
     "content/posts/锐捷/认证.md.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png.baiduyun.uploading.cfg",
