@@ -20,21 +20,8 @@
               "icon": "lucide-file",
               "title": "认证"
             }
-          },
-          {
-            "id": "6ce5903252919dc7",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.4"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.11.4"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,7 +185,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6ce5903252919dc7",
+  "active": "32672eed5a6276ea",
   "lastOpenFiles": [
     "content/posts/锐捷/认证.md.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png.baiduyun.uploading.cfg",
