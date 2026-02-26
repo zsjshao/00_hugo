@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
+                "file": "content/posts/锐捷/认证.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ISIS 的反向链接列表"
+              "title": "认证 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/华为/HCIA-Datacom/ISIS.md",
+                "file": "content/posts/锐捷/认证.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ISIS 的出链列表"
+              "title": "认证 的出链列表"
             }
           },
           {
