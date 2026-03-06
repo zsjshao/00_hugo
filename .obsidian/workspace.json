@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/锐捷/认证.md",
+                "file": "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "认证"
+              "title": "01-云计算简介"
             }
           }
         ],
@@ -202,6 +202,32 @@
   },
   "active": "058aad0735188e02",
   "lastOpenFiles": [
+    "content/posts/华为/HCIA-Datacom/8、生成树.md",
+    "content/posts/华为/HCIA-Datacom/2、网络参考模型.md",
+    "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
+    "content/posts/cii版本修改.md",
+    "content/posts/题.md",
+    "content/posts/Linux/linux_basic/39-Tomcat.md",
+    "content/posts/ie/Switch.md",
+    "content/posts/ie/OSPF.md",
+    "content/posts/ie/MPLS.md",
+    "content/posts/ie/BGP.md",
+    "content/posts/ie/AAA.md",
+    "content/posts/data_structure/什么是数据结构.md",
+    "content/posts/C/02、数据类型.md",
+    "content/posts/C/01、Hello_world.md",
+    "content/posts/C/06、数组.md",
+    "content/posts/C/07、指针.md",
+    "content/posts/C/08、函数.md",
+    "content/posts/华为/HCIP-Cloud OpenStack/03-OpenStack认证管理.md",
+    "content/posts/华为/HCIP-Cloud OpenStack/02-OpenStack操作界面管理.md",
+    "content/posts/华为/HCIP-Cloud OpenStack/01-OpenStack概览.md",
+    "content/posts/华为/HCIP-Cloud Container/01-容器技术概述.md",
+    "content/posts/华为/HCIA-Security/04防火墙安全策略.md",
+    "content/posts/华为/HCIA-Datacom/VXLAN.md",
+    "content/posts/华为/HCIA-Datacom/ISIS.md",
+    "content/posts/面试题/云计算.md",
+    "content/posts/锐捷/认证.md",
     "content/posts/锐捷/认证.md.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png",
@@ -211,21 +237,8 @@
     "content/posts/华为/HCIA-Datacom/2、网络参考模型.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md.baiduyun.uploading.cfg",
     "content/gg.md.baiduyun.uploading.cfg",
-    "content/posts/华为/HCIA-Datacom/1、数据通信网络基础.md",
-    "content/posts/锐捷/认证.md",
-    "content/posts/华为/HCIA-Datacom/ISIS.md",
-    "content/gg.md",
-    "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
-    "content/posts/华为/HCIA-Cloud Computing/02-计算虚拟化简介.md",
-    "content/posts/华为/HCIA-Datacom/2、网络参考模型.md",
-    "content/posts/华为/HCIA-Datacom/1、数据通信网络基础 1.md",
-    "content/posts/华为/HCIA-Datacom/8、生成树.md",
     "content/posts/华为/HCIA-Datacom/8、生成树.md.baiduyun.uploading.cfg",
     "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png.baiduyun.uploading.cfg",
-    "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png",
-    "content/posts/华为/HCIA-Datacom/assets/8、生成树",
-    "content/posts/华为/HCIA-Datacom/VXLAN.md",
-    "content/posts/5G/5G原理及系统架构.md",
-    "content/posts/计算机学习方向.md"
+    "content/posts/华为/HCIA-Datacom/assets/8、生成树/file-20260105164849628.png"
   ]
 }
