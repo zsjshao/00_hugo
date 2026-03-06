@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Linux/linux_basic/30-keepalived.md",
+                "file": "content/posts/Linux/linux_basic/39-Tomcat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "30-keepalived"
+              "title": "39-Tomcat"
             }
           }
         ],
@@ -202,6 +202,7 @@
   },
   "active": "058aad0735188e02",
   "lastOpenFiles": [
+    "content/posts/Linux/linux_basic/30-keepalived.md",
     "content/posts/windows/AD域.md",
     "content/posts/华为/HCIA-Cloud Computing/01-云计算简介.md",
     "content/posts/华为/HCIA-Datacom/8、生成树.md",
@@ -227,7 +228,6 @@
     "content/posts/华为/HCIP-Cloud Container/01-容器技术概述.md",
     "content/posts/华为/HCIA-Security/04防火墙安全策略.md",
     "content/posts/华为/HCIA-Datacom/VXLAN.md",
-    "content/posts/华为/HCIA-Datacom/ISIS.md",
     "content/posts/锐捷/认证.md.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png.baiduyun.uploading.cfg",
     "content/posts/锐捷/assets/认证/file-20260112154513417.png",
